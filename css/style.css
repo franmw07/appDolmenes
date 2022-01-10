@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, a, button{
+    font-family: 'Roboto', sans-serif;
+}
+
+p, li{
+    font-family: 'Roboto Slab', serif;
+}
+/* INICIO estilos panel principal */
+
+.flex_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lang{
+    margin: 15px;
+    background: #415762;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    color: #ffffff;
+}
+
+.container_info{
+    width: calc(100% - 280px);
+    height: calc(100vh - 125px);
+}
+
+.title{
+    margin-bottom: 15px;
+}
+
+.conteiner_logo{
+    width: calc(100% - 280px);
+    height: 125px;
+    background-color: rgb(0, 195, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteiner_logo img{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.nav_bar{
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    background: #415762;
+}
+
+.nav_bar ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.button_nav_bar{
+    border: solid;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: none;
+    border-bottom: solid 2px white;
+}
+
+.button_nav_bar:last-child{
+    border-bottom: none;
+}
+
+.button_nav_bar a{
+    margin: auto 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* FIN Panel principal */
+
+/* Estilos Historia de los dólmenes INICIO */
+
+.container_info_dolmenes{
+    height: 100vh;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.sub_text{
+    font-family: 'Roboto Slab', serif;
+}
+
+/* FIN historia de los dolmenes */ 
+
+/* INICIO dolmenes de mandubi */
+.img_float{
+    float: right;
+    min-width: 200px;
+    min-height: 150px;
+    margin: 7px 20px;
+    background-color: rgb(0, 195, 255);
+}
+/* FIN dolmenes de mandubi */
+
+/* INICIO Panel mapa de los dólmenes */
+.container_info_maps{
+    height: 100vh;
+}
+
+.maps_container{
+    height: 70vh;
+    margin: 150px 30px 15px 15px;
+    border-radius: 8px;
+    background-color: rgb(0, 195, 255);
+    text-align: center;
+}
+
+.nav_bar_maps{
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #415762;
+}
+
+.nav_bar_maps h1{
+    text-align: center;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.container_text_maps{
+    margin: 30px;
+    color: #ffffff;
+}
+/* FIN mapa de los dolmenes */
+
+/* INICIO de galeria de imágenes */
+/* contenedor de imágen seleccionada */
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 125px;
+}
+.img-ampliada{
+    width: 80%;
+    height: 50vh;
+    margin: 1em auto;
+    border-radius: 1em;
+    background-color: rgb(0, 195, 255);
+}
+/* fin del contenedor de imágen selecionada */
+
+/* carousel de imágenes */
+
+.carousel{
+    width: 100%;
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-carousel-img{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0em;
+}
+.img-carousel{
+    width: calc( 500% / 5 );
+    max-width: 200px;
+    min-height: 20vh;
+    max-height: 200px;
+    margin: 1em;
+    border-radius: 0.7em;
+    background-color: rgb(0, 195, 255);
+}
+.button-carousel{
+    margin: 1em;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.select{
+    width: 3em;
+    height: 3em;
+    margin: 0.2em 6em;
+}
+
+/* fin del carousel de imágenes
+
+/* INICIO galeria de imagenes cartas */
+.container-fluid{
+    max-width: 90%;
+}
+
+.container_cards{
+    height: 100vh;
+    width: 100%;
+}
+
+.contariner_cards_scroll{
+    height: 84%;
+    margin-top: 125px;
+}
+
+.card{
+    background-color: none;
+    margin: auto;
+}
+
+.card:hover{
+    box-shadow: 0px 4px 14px 1px #89a6b3;
+}
+
+.card-img-top{
+    height: 70%;
+    background-color: rgb(0, 195, 255);
+}
+
+.card-body{
+    text-align: center;
+    background: #415762;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.card_wh{
+    width: 23rem;
+    height: 23rem;
+}
+
+/* FIN galeria de imágenes cartas */
+
+/* INICIO panel imágen 360º */
+.container_button{
+    z-index: 1;
+    position: absolute;
+}
+
+.container_img_360{
+    width: 100%;
+    height: 100vh;
+}
+
+#activar-vista-360{
+    display: none;
+}
+
+/* Panel VR */
+
+#model-3d{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    /* panel principal */
+
+    .container_info{
+        width: 100%;
+    }
+
+    .conteiner_logo{
+        width: 100%;
+        margin-bottom: 140px;
+    }
+
+    .nav_bar{
+        position: fixed;
+        bottom: 0px;
+        height: 60px;
+        width: 100%;
+        height: 140px;
+    }
+
+    .nav_bar ol{
+        flex-direction: row;
+    }
+
+    .button_nav_bar{
+        border-bottom: none;
+        border-right: solid 2px white;
+    }
+
+    .button_nav_bar:last-child{
+        border-right: none;
+    }
+
+    .button_nav_bar a{
+        text-align: center;
+        padding: 5px;
+        margin: auto;
+    }
+
+    /* Fin panel pricipal */
+
+    /* INICIO historia de los dolmenes */
+    .container_info_dolmenes{
+        margin-bottom: 90px;
+    }
+
+    .nav_bar_dolmenes{
+        height: 125px;
+    }
+
+    .sub_text{
+        display: none;
+    }
+
+    /* FIN historia de los dolmenes */
+    
+    /* INICIO Panel mapa de los dólmenes */
+
+    .nav_bar_maps{
+        width: 100%;
+        position: relative;
+        
+    }
+}

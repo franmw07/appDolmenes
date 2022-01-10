@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandubi Trikuharria</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="../../js/main.js"></script>
+    <!-- libreria A-FRAME -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- libreria Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <!-- INICIO Galería de imagenes 360º -->
+    <div id="ocultar-galeria" class="flex_container">
+      <section class="container_info container_cards ps-5 pe-5">
+        <div class="container_button">
+          <button class="lang fs-4 fw-bolder" onclick="history.back()">
+            Atrás
+          </button>
+          <button class="lang fs-4 fw-bolder">Idioma</button>
+        </div>
+        <!-- contenedor de imagnes con información -->
+        <div class="overflow-auto contariner_cards_scroll pt-2">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    id="1"
+                    src="https://cloudflare1.360gigapixels.com/pano/franvalver/01646926_Panoramica_360_Dolmen_de_los_Gabrieles.jpg/equirect_crop_3_1/6.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 1"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    id="2"
+                    src="https://cdn.pixabay.com/photo/2018/07/11/16/34/landscape-3531355_960_720.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 2"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    id="3"
+                    src="https://cdn.pixabay.com/photo/2018/07/11/16/35/beach-3531358_960_720.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 3"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2021/02/01/06/58/panorama-5969540_960_720.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 3"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    src="https://cloudflare1.360gigapixels.com/pano/franvalver/01646926_Panoramica_360_Dolmen_de_los_Gabrieles.jpg/equirect_crop_3_1/6.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 3"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2018/07/11/16/34/landscape-3531355_960_720.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 3"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2018/07/11/16/35/beach-3531358_960_720.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 3"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2021/02/01/06/58/panorama-5969540_960_720.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 3"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card bg-transparent border-0 card_wh">
+                  <img
+                    src="https://cloudflare1.360gigapixels.com/pano/franvalver/01646926_Panoramica_360_Dolmen_de_los_Gabrieles.jpg/equirect_crop_3_1/6.jpg"
+                    class="card-img-top rounded-top change"
+                    alt="img 3"
+                  />
+                  <div class="card-body rounded-bottom">
+                    <p class="card-text fs-4">
+                      Nombre del sitio o breve descripción
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- INICIO Panel de imágenes 360º -->
+    <div id="activar-vista-360" class="flex_container">
+      <section
+        class="container_info container_img_360 bg-transparent pe-5 ps-5"
+      >
+        <div class="container_button">
+          <button class="lang fs-4 fw-bolder" onclick="returnGaleria()">
+            Atrás
+          </button>
+        </div>
+        <a-scene>
+          <a-sky id="scene360" rotation="0 -100 0" radius="50"></a-sky>
+        </a-scene>
+      </section>
+    </div>
+    <!-- Script Jquery para cambiar la vista de la imágen seleccionada a 360º-->
+    <script>
+      $(document).ready(function changeImg() {
+        $(".change").click(function imgSrc() {
+          $("#scene360").attr("src", this.src);
+          $("#ocultar-galeria").css("display", "none");
+          $("#activar-vista-360").css("display", "block");
+          console.log(this.src);
+        });
+      });
+    </script>
+  </body>
+</html>
