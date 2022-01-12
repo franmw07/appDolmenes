@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- libreria  para model viewer -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <model-viewer
+      id="paused-change-demo"
+      camera-controls
+      animation-name="Running"
+      ar
+      shadow-intensity="1"
+      src="../../media/GLB_Jaguar.glb"
+      alt="An animated 3D model of a robot"
+      style="width: 500px; height: 500px;"
+    ></model-viewer>
+    <button onclick="pause()">pause</button>
+    <button onclick="play()">play</button>
+    <button onclick="reset()">reset</button>
+    <script>
+      pause = ()=>{
+          var modelViewer = document.querySelector('#paused-change-demo');
+          modelViewer.pause()
+          console.log(modelViewer);
+      }
+      play = ()=>{
+        var modelViewer = document.querySelector('#paused-change-demo');
+          modelViewer.play()
+      }
+      reset = () =>{
+        var modelViewer = document.querySelector('#paused-change-demo');
+        modelViewer.load();
+        console.log(modelViewer);
+      }
+    </script>
+  </body>
+</html>

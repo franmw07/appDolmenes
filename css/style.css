@@ -167,7 +167,6 @@ p, li{
     height: 50vh;
     margin: 1em auto;
     border-radius: 1em;
-    background-color: rgb(0, 195, 255);
 }
 /* fin del contenedor de imágen selecionada */
 
@@ -179,24 +178,23 @@ p, li{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 
 }
 .container-carousel-img{
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
     align-items: center;
     padding: 1em 0em;
 }
 .img-carousel{
-    width: calc( 500% / 5 );
-    max-width: 200px;
-    min-height: 20vh;
-    max-height: 200px;
+    width: 300px;
+    min-width: 200px;
+    height: 200px;
     margin: 1em;
     border-radius: 0.7em;
-    background-color: rgb(0, 195, 255);
+    background-color: #89a6b3; /* cambiar al colocar las imagenes */
 }
 .button-carousel{
     margin: 1em;
@@ -277,10 +275,19 @@ p, li{
 
 /* Panel VR */
 
-#model-3d{
+.Model3d{
     width: 100%;
     height: 100%;
 }
+
+.vr-select{
+    border: solid;
+}
+
+/*#model-3d{
+    width: 100%;
+    height: 100%;
+}*/
 
 
 @media only screen and (max-width: 600px){
