@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mandubi Trikuharria</title>
     <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../js/main.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,7 +41,7 @@
             <button class="lang fs-4 fw-bolder">Idioma</button>
           </div>
           <div>
-            <button class="lang fs-4 fw-bolder play">Play</button>
+            <button class="lang fs-4 fw-bolder pause" type="button" value="pause"  onclick="pause()">Play</button>
             <button class="lang fs-4 fw-bolder">Reset</button>
           </div>
         </div>
@@ -54,12 +55,12 @@
               bounds="tight"
               src="../../media/Barca_01.glb"
               ar
+              animation-name="Running"
               ar-modes="webxr scene-viewer quick-look"
               camera-controls
               environment-image="neutral"
               poster="poster.webp"
               shadow-intensity="1"
-              autoplay
             >
               <div class="progress-bar hide" slot="progress-bar">
                 <div class="update-bar"></div>

@@ -54,6 +54,7 @@ p, li{
 }
 
 .nav_bar{
+    text-align: center;
     width: 280px;
     height: 100vh;
     display: flex;
@@ -85,7 +86,7 @@ p, li{
 }
 
 .button_nav_bar a{
-    margin: auto 10px;
+    margin: auto;
     font-size: 16px;
     text-decoration: none;
     color: #ffffff;
