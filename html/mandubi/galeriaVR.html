@@ -24,8 +24,8 @@
     <!-- Panel Galería de imágenes -->
     <div class="flex_container">
       <section class="container_info container_info_maps ps-5 pe-5">
+        <!-- botones -->
         <div class="d-flex justify-content-between">
-          <!-- no tiene asignado estilo -->
           <div>
             <button class="lang fs-4 fw-bolder" onclick="history.back()">
               Atrás
@@ -33,7 +33,14 @@
             <button class="lang fs-4 fw-bolder">Idioma</button>
           </div>
           <div>
-            <button class="lang fs-4 fw-bolder pause" type="button" value="pause"  onclick="pause()">Play</button>
+            <button
+              class="lang fs-4 fw-bolder pause"
+              type="button"
+              value="pause"
+              onclick="pause()"
+            >
+              Play
+            </button>
             <button class="lang fs-4 fw-bolder">Reset</button>
           </div>
         </div>
@@ -60,7 +67,8 @@
               <button slot="ar-button" id="ar-button">
                 View in your space
               </button>
-              <div id="ar-prompt" style="display: none;"> <!-- cambiar si se desea ver la mano con movil en la imagen -->
+              <div id="ar-prompt" style="display: none">
+                <!-- cambiar si se desea ver la mano con movil en la imagen -->
                 <img
                   src="https://modelviewer.dev/shared-assets/icons/hand.png"
                 />
@@ -131,6 +139,44 @@
                 ></model-viewer>
               </div>
             </div>
+            <nav class="slider-nav">
+              <ul>
+                <li class="arrow">
+                  <button class="previousVr" onclick="showPreviousVr()">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-left"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li class="arrow">
+                  <button class="nextVr" onclick="showNextVr()">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </nav>
           </div>
         </article>
       </section>
@@ -141,7 +187,7 @@
           Información de interés
         </h1>
         <ul class="container_text_maps">
-          <li class="fs-4">Nombre</li>
+          <li class="fs-4">Nombre Barca</li>
           <li class="fs-4">Tamaño</li>
           <li class="fs-4">Fecha</li>
           <li class="fs-4">Material</li>
@@ -156,15 +202,5 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
-    <!-- libreria Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- Script Jquery para cambiar la vista de la imágen seleccionada a 360º-->
-    <script>
-      $(document).ready(function changeVr() {
-        $(".changeVr").click(function vrSrc() {
-          $("#Vr").attr("src", this.src);
-        });
-      });
-    </script>
   </body>
 </html>
