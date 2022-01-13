@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mandubi Trikuharria</title>
     <link rel="stylesheet" href="../../css/style.css" />
-    <script src="../../js/main.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,13 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-    <!-- libreria  para model viewer -->
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
-    <!-- libreria Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
     <!-- Panel Galería de imágenes -->
@@ -59,7 +51,7 @@
               ar-modes="webxr scene-viewer quick-look"
               camera-controls
               environment-image="neutral"
-              poster="poster.webp"
+              poster=""
               shadow-intensity="1"
             >
               <div class="progress-bar hide" slot="progress-bar">
@@ -86,7 +78,7 @@
                   ar
                   ar-modes="webxr scene-viewer quick-look"
                   environment-image="neutral"
-                  poster="poster.webp"
+                  poster=""
                   shadow-intensity="1"
                 ></model-viewer>
               </div>
@@ -98,7 +90,7 @@
                   ar
                   ar-modes="webxr scene-viewer quick-look"
                   environment-image="neutral"
-                  poster="poster.webp"
+                  poster=""
                   shadow-intensity="1"
                 ></model-viewer>
               </div>
@@ -110,7 +102,7 @@
                   ar
                   ar-modes="webxr scene-viewer quick-look"
                   environment-image="neutral"
-                  poster="poster.webp"
+                  poster=""
                   shadow-intensity="1"
                 ></model-viewer>
               </div>
@@ -122,7 +114,7 @@
                   ar
                   ar-modes="webxr scene-viewer quick-look"
                   environment-image="neutral"
-                  poster="poster.webp"
+                  poster=""
                   shadow-intensity="1"
                 ></model-viewer>
               </div>
@@ -134,7 +126,7 @@
                   ar
                   ar-modes="webxr scene-viewer quick-look"
                   environment-image="neutral"
-                  poster="poster.webp"
+                  poster=""
                   shadow-intensity="1"
                 ></model-viewer>
               </div>
@@ -158,6 +150,14 @@
         </ul>
       </nav>
     </div>
+    <script src="../../js/main.js"></script>
+    <!-- libreria  para model viewer -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <!-- libreria Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Script Jquery para cambiar la vista de la imágen seleccionada a 360º-->
     <script>
       $(document).ready(function changeVr() {
