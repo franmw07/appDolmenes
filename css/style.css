@@ -1,428 +1,442 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1, a, button{
-    font-family: 'Roboto', sans-serif;
+h1,
+a,
+button {
+  font-family: "Roboto", sans-serif;
 }
 
-p, li{
-    font-family: 'Roboto Slab', serif;
+p,
+li {
+  font-family: "Roboto Slab", serif;
 }
 /* INICIO estilos panel principal */
 
-.flex_container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.lang{
-    margin: 15px;
-    background: #415762;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    border: none;
-    color: #ffffff;
+.lang {
+  margin: 15px;
+  background: #415762;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border: none;
+  color: #ffffff;
 }
 
-.container_info{
-    width: calc(100% - 280px);
-    height: calc(100vh - 125px);
+.container_info {
+  width: calc(100% - 280px);
+  height: calc(100vh - 125px);
 }
 
-.title{
-    margin-bottom: 15px;
+.title {
+  margin-bottom: 15px;
 }
 
-.conteiner_logo{
-    width: calc(100% - 280px);
-    height: 125px;
-    background-color: rgb(0, 195, 255);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.conteiner_logo {
+  width: calc(100% - 280px);
+  height: 125px;
+  background-color: rgb(0, 195, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.conteiner_logo img{
-    width: 50px;
-    height: 50px;
-    text-align: center;
+.conteiner_logo img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
 }
 
-.nav_bar{
-    text-align: center;
-    width: 280px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0px;
-    background: #415762;
+.nav_bar {
+  text-align: center;
+  width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+  background: #415762;
 }
 
-.nav_bar ol{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
+.nav_bar ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
 }
 
-.button_nav_bar{
-    border: solid;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    border: none;
-    border-bottom: solid 2px white;
+.button_nav_bar {
+  border: solid;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border: none;
+  border-bottom: solid 2px white;
 }
 
-.button_nav_bar:last-child{
-    border-bottom: none;
+.button_nav_bar:last-child {
+  border-bottom: none;
 }
 
-.button_nav_bar a{
-    margin: auto;
-    font-size: 16px;
-    text-decoration: none;
-    color: #ffffff;
+.button_nav_bar a {
+  margin: auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* FIN Panel principal */
 
 /* Estilos Historia de los dólmenes INICIO */
 
-.container_info_dolmenes{
-    height: 100vh;
+.container_info_dolmenes {
+  height: 100vh;
 }
 
-.text_center{
-    text-align: center;
+.text_center {
+  text-align: center;
 }
 
-.sub_text{
-    font-family: 'Roboto Slab', serif;
+.sub_text {
+  font-family: "Roboto Slab", serif;
 }
 
-/* FIN historia de los dolmenes */ 
+/* FIN historia de los dolmenes */
 
 /* INICIO dolmenes de mandubi */
-.img_float{
-    float: right;
-    min-width: 200px;
-    min-height: 150px;
-    margin: 7px 20px;
-    background-color: rgb(0, 195, 255);
+.img_float {
+  float: right;
+  min-width: 200px;
+  min-height: 150px;
+  margin: 7px 20px;
+  background-color: rgb(0, 195, 255);
 }
 /* FIN dolmenes de mandubi */
 
 /* INICIO Panel mapa de los dólmenes */
-.container_info_maps{
-    height: 100vh;
+.maps_container {
+  height: 70vh;
+  margin: 150px 30px 15px 15px;
+  border-radius: 8px;
+  background-color: rgb(0, 195, 255);
+  text-align: center;
 }
 
-.maps_container{
-    height: 70vh;
-    margin: 150px 30px 15px 15px;
-    border-radius: 8px;
-    background-color: rgb(0, 195, 255);
-    text-align: center;
+.nav_bar_maps {
+  width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #415762;
 }
 
-.nav_bar_maps{
-    width: 280px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    background-color: #415762;
+.nav_bar_maps h1 {
+  text-align: center;
+  margin: 20px;
+  color: #ffffff;
 }
 
-.nav_bar_maps h1{
-    text-align: center;
-    margin: 20px;
-    color: #ffffff;
-}
-
-.container_text_maps{
-    margin: 30px;
-    color: #ffffff;
+.container_text_maps {
+  margin: 30px;
+  color: #ffffff;
 }
 /* FIN mapa de los dolmenes */
 
 /* INICIO de galeria de imágenes */
 /* contenedor de imágen seleccionada */
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    margin-top: 125px;
-}
-.img-ampliada{
-    width: 80%;
-    height: 50vh;
-    margin: 1em auto;
-    border-radius: 1em;
-    text-align: center;
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
-.img-ampliada img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.galeria {
+  margin-top: 140px;
 }
 
-.slider img.active , .img-carousel img.active {
-    animation: fadeImg 0.8s;
+.img-ampliada {
+  width: 80%;
+  height: 50vh;
+  margin: 1em auto;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.img-ampliada img,
+.img-ampliada model-viewer {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider img.active,
+.img-carousel img.active,
+.slider model-viewer.active,
+.img-carousel model-viewer.active {
+  animation: fadeImg 0.8s;
 }
 
 /* fin del contenedor de imágen selecionada */
 
-/* carousel de imágenes */
+/*----- Slider inferior -------*/
 
-.carousel{
-    width: 100%;
-    padding: 0.7em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-
-}
-.container-carousel-img{
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    padding: 1em 0em;
-}
-.img-carousel{
-    width: 300px;
-    min-width: 200px;
-    height: 200px;
-    margin: 1em;
-    border-radius: 0.7em;
-    background-color: #89a6b3; /* cambiar al colocar las imagenes */
+.carousel {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.img-carousel img{
-    height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 0.7em;
+.container-carousel-img {
+  --img-carousel-width: 80%;
+  --img-carousel-width: 380px;
+  --img-carousel-height: 200px;
+  --carousel-min-width: 600px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--img-carousel-height);
+  min-width: var(--carousel-min-width);
+  transition: filter 0.3s ease;
+  margin: 1em;
 }
 
-.select{
-    width: 3em;
-    height: 3em;
-    margin: 0.2em 6em;
+.container-carousel-img.smooth-return {
+  transition: all 0.2s ease;
 }
 
-/* botones */
+.container-carousel-img .img-carousel {
+  width: var(--img-carousel-width);
+  max-width: var(--img-carousel-max-width);
+  text-align: center;
+  min-width: 250px;
+  height: var(--img-carousel-height);
+  position: absolute;
+  margin: 0 auto;
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.7em;
+  filter: brightness(0.9);
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 
-button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 20px 5px;
-    color: #3c376f;
-    font-size: 2rem;
-  }
-  
-  button svg {
-    position: relative;
-    display: inline-block;
-    transform: translateX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .previous:hover svg, .previousVr:hover svg {
-    transform: translateX(-10px) scale(1.2);
-  }
-  
-  .next:hover svg, .nextVr:hover svg {
-    transform: translateX(10px) scale(1.2);
-  }
+.img-carousel.highlight {
+  filter: brightness(1);
+}
 
-  .slider-nav{
-    position: absolute;
-    width: 22%;
-  }
-  
-  .slider-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .slider-nav li {
-    display: flex;
-    text-align: center;
-  }
+.image-container {
+  width: 8em;
+  height: 8em;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 2em;
+  border-radius: 100%;
+  padding: 1em;
+  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+}
 
-  .slider-nav svg {
-    display: block;
-    width: 100%;
-  }
+.image-container::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
+  border: solid 3px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
 
-  @keyframes fadeImg {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
+.img-carousel img,
+.img-carousel model-viewer {
+  height: 107%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0.7em;
+}
 
-/* fin del carousel de imágenes
+@media screen and (max-width: 640px) {
+  .container-carousel-img {
+    --img-carousel-max-width: 280px;
+    --img-carousel-max-height: 200px;
+  }
+}
+
+/*------- Fin slider de imágenes -----*/
 
 /* INICIO galeria de imagenes cartas */
-.container-fluid{
-    max-width: 90%;
+.container-fluid {
+  max-width: 90%;
 }
 
-.container_cards{
-    height: 100vh;
-    width: 100%;
+.container_cards {
+  height: 100vh;
+  width: 100%;
 }
 
-.contariner_cards_scroll{
-    height: 84%;
-    margin-top: 125px;
+.contariner_cards_scroll {
+  height: 84%;
+  margin-top: 125px;
 }
 
-.card{
-    background-color: none;
-    margin: auto;
+.card {
+  background-color: none;
+  margin: auto;
 }
 
-.card:hover{
-    box-shadow: 0px 4px 14px 1px #89a6b3;
+.card:hover {
+  box-shadow: 0px 4px 14px 1px #89a6b3;
 }
 
-.card-img-top{
-    height: 70%;
-    background-color: rgb(0, 195, 255);
+.card-img-top {
+  height: 70%;
+  background-color: rgb(0, 195, 255);
 }
 
-.card-body{
-    text-align: center;
-    background: #415762;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
+.card-body {
+  text-align: center;
+  background: #415762;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
 }
 
-.card_wh{
-    width: 23rem;
-    height: 23rem;
+.card_wh {
+  width: 23rem;
+  height: 23rem;
 }
 
 /* FIN galeria de imágenes cartas */
 
 /* INICIO panel imágen 360º */
-.container_button{
-    z-index: 1;
-    position: absolute;
+.container_button {
+  z-index: 1;
+  position: absolute;
 }
 
-.container_img_360{
-    width: 100%;
-    height: 100vh;
+.container_img_360 {
+  width: 100%;
+  height: 100vh;
 }
 
-#activar-vista-360{
-    display: none;
+#activar-vista-360 {
+  display: none;
 }
 
-/* Panel VR */
+@media only screen and (max-width: 600px) {
+  /* panel principal */
 
-.Model3d{
+  .container_info {
     width: 100%;
     height: 100%;
-}
+    display: flex;
+    flex-direction: column;
+  }
 
-.vr-select{
-    border: solid;
-}
+  .conteiner_logo {
+    width: 100%;
+    margin-bottom: 140px;
+  }
 
+  .text_container {
+    height: 70vh;
+  }
 
-@media only screen and (max-width: 600px){
+  .nav_bar {
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    height: 140px;
+  }
 
-    /* panel principal */
+  .nav_bar ol {
+    flex-direction: row;
+  }
 
-    .container_info{
-        width: 100%;
-    }
+  .button_nav_bar {
+    border-bottom: none;
+    border-right: solid 2px white;
+  }
 
-    .conteiner_logo{
-        width: 100%;
-        margin-bottom: 140px;
-    }
+  .button_nav_bar:last-child {
+    border-right: none;
+  }
 
-    .nav_bar{
-        position: fixed;
-        bottom: 0px;
-        height: 60px;
-        width: 100%;
-        height: 140px;
-    }
+  .button_nav_bar a {
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+  }
 
-    .nav_bar ol{
-        flex-direction: row;
-    }
+  /* Fin panel pricipal */
 
-    .button_nav_bar{
-        border-bottom: none;
-        border-right: solid 2px white;
-    }
+  /* INICIO historia de los dolmenes */
+  .maps_container {
+    margin: 150px auto 25px;
+    width: 100%;
+  }
 
-    .button_nav_bar:last-child{
-        border-right: none;
-    }
+  .container_info_dolmenes {
+    margin-bottom: 125px;
+  }
 
-    .button_nav_bar a{
-        text-align: center;
-        padding: 5px;
-        margin: auto;
-    }
+  .nav_bar_dolmenes {
+    height: 125px;
+  }
 
-    /* Fin panel pricipal */
+  .sub_text {
+    display: none;
+  }
 
-    /* INICIO historia de los dolmenes */
-    .container_info_dolmenes{
-        margin-bottom: 90px;
-    }
+  /* FIN historia de los dolmenes */
 
-    .nav_bar_dolmenes{
-        height: 125px;
-    }
+  /* INICIO Panel mapa de los dólmenes */
 
-    .sub_text{
-        display: none;
-    }
+  .nav_bar_maps {
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+  }
 
-    /* FIN historia de los dolmenes */
-    
-    /* INICIO Panel mapa de los dólmenes */
+  /* Inicio galería */
 
-    .nav_bar_maps{
-        width: 100%;
-        position: relative;
-        
-    }
+  .img-ampliada {
+    width: 100%;
+  }
+
+  /* galeria Vr boton */
+  .container_button {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .lang {
+    width: 75px;
+    height: 75px;
+  }
 }

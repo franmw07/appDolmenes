@@ -23,37 +23,38 @@
   <body>
     <!-- Panel Galería de imágenes -->
     <div class="flex_container">
-      <section class="container_info container_info_maps ps-5 pe-5">
+      <section
+        class="container_info container_info_maps ps-sm-0 pe-sm-0 ps-5 pe-5"
+      >
         <!-- botones -->
         <div class="d-flex justify-content-between">
-          <div>
-            <button class="lang fs-4 fw-bolder" onclick="history.back()">
+          <div class="container-button">
+            <button class="lang fs-5 fw-bolder" onclick="history.back()">
               Atrás
             </button>
-            <button class="lang fs-4 fw-bolder">Idioma</button>
+            <button class="lang fs-5 fw-bolder">Idioma</button>
           </div>
-          <div>
+          <div id="hidden" class="container-button">
             <button
-              class="lang fs-4 fw-bolder pause"
+              class="lang fs-5 fw-bolder pause"
               type="button"
               value="pause"
-              onclick="pause()"
+              onclick="pauseAndPlay()"
             >
               Play
             </button>
-            <button class="lang fs-4 fw-bolder">Reset</button>
+            <button class="lang fs-5 fw-bolder">Reset</button>
           </div>
         </div>
         <!-- contenedor de imagen central -->
-        <article class="img_galery_container">
+        <article class="contenedor mt-0">
           <!--contenedor de modelo 3D-->
-          <div class="img-ampliada">
+          <div class="img-ampliada slider">
             <model-viewer
-              id="Vr"
+              id="imgGalery"
               class="Model3d"
               bounds="tight"
               src="../../media/Barca_01.glb"
-              ar
               animation-name="Running"
               ar-modes="webxr scene-viewer quick-look"
               camera-controls
@@ -80,7 +81,7 @@
             <div class="container-carousel-img">
               <div class="img-carousel">
                 <model-viewer
-                  class="Model3d changeVr"
+                  class="imgItems"
                   bounds="tight"
                   src="../../media/Barca_01.glb"
                   ar
@@ -92,7 +93,7 @@
               </div>
               <div class="img-carousel">
                 <model-viewer
-                  class="Model3d changeVr"
+                  class="imgItems"
                   bounds="tight"
                   src="../../media/Capitan America (1).glb"
                   ar
@@ -104,7 +105,7 @@
               </div>
               <div class="img-carousel">
                 <model-viewer
-                  class="Model3d changeVr"
+                  class="imgItems"
                   bounds="tight"
                   src="../../media/GLB_Arbol_01.glb"
                   ar
@@ -116,7 +117,7 @@
               </div>
               <div class="img-carousel">
                 <model-viewer
-                  class="Model3d changeVr"
+                  class="imgItems"
                   bounds="tight"
                   src="../../media/GLB_Coche_03.glb"
                   ar
@@ -128,7 +129,7 @@
               </div>
               <div class="img-carousel">
                 <model-viewer
-                  class="Model3d changeVr"
+                  class="imgItems"
                   bounds="tight"
                   src="../../media/GLB_Jaguar.glb"
                   ar
@@ -139,50 +140,12 @@
                 ></model-viewer>
               </div>
             </div>
-            <nav class="slider-nav">
-              <ul>
-                <li class="arrow">
-                  <button class="previousVr" onclick="showPreviousVr()">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-chevron-left"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                      />
-                    </svg>
-                  </button>
-                </li>
-                <li class="arrow">
-                  <button class="nextVr" onclick="showNextVr()">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-chevron-right"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                      />
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </nav>
           </div>
         </article>
       </section>
       <nav class="nav_bar_maps">
         <h1
-          class="title fs-2 h-25 m-0 mb-2 border-bottom border-white border-3 d-flex align-items-center"
+          class="title fs-2 me-0 ms-0 h-md-25 mb-2 border-bottom border-white border-3 d-flex justify-content-center align-items-center"
         >
           Información de interés
         </h1>
