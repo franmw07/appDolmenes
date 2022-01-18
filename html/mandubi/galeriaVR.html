@@ -24,7 +24,7 @@
     <!-- Panel Galería de imágenes -->
     <div class="flex_container">
       <section
-        class="container_info container_info_maps ps-sm-0 pe-sm-0 ps-5 pe-5"
+        class="container_info container_info_maps ps-sm-0 pe-sm-0"
       >
         <!-- botones -->
         <div class="d-flex justify-content-between">
@@ -43,11 +43,11 @@
             >
               Play
             </button>
-            <button class="lang fs-5 fw-bolder">Reset</button>
+            <button class="lang fs-5 fw-bolder" onclick="reset()">Reset</button>
           </div>
         </div>
         <!-- contenedor de imagen central -->
-        <article class="contenedor mt-0">
+        <article class="contenedor mt-0 ps-4 pe-4">
           <!--contenedor de modelo 3D-->
           <div class="img-ampliada slider">
             <model-viewer
@@ -145,7 +145,7 @@
       </section>
       <nav class="nav_bar_maps">
         <h1
-          class="title fs-2 me-0 ms-0 h-md-25 mb-2 border-bottom border-white border-3 d-flex justify-content-center align-items-center"
+          class="title fs-2 me-0 ms-0 pb-3 mb-2 border-bottom border-white border-3 d-flex justify-content-center align-items-center"
         >
           Información de interés
         </h1>
@@ -165,5 +165,6 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    </script>
   </body>
 </html>
