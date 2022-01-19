@@ -24,13 +24,19 @@ li {
 
 .lang {
   margin: 20px 5px 20px 25px;
-  background: linear-gradient(to top, #415762, #89a6b3);
-  box-shadow: 0px 2px 6px 0px #89a6b3;
+  background: #415762;
+  box-shadow: 0px 1px 1px 2px #89a6b3;
   border-radius: 5px;
   width: 100px;
   height: 40px;
   border: none;
   color: #ffffff;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+}
+
+.lang:hover{
+  box-shadow: none;
 }
 
 .container_info {
@@ -47,7 +53,7 @@ li {
 
 .img-fondo img{
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   object-fit: cover;
 }
 
@@ -62,13 +68,17 @@ li {
 .text_container div{
   padding: 5px 20px;
   border-radius: 5px;
+  height: 35vh;
   width: 90%;
   background-color: #ffffff;
-  box-shadow: 0px -15px 25px -13px #415762;
+  box-shadow: 0px -14px 36px -11px #415762;
 }
 
 .title {
   color: #415762;
+  font-size: 1.7em;
+  letter-spacing: 0.15em;
+  font-weight: bold;
 }
 
 .conteiner_logo {
@@ -91,17 +101,20 @@ li {
   padding: 0px 5px;
 }
 
-
+/*----------------------------------------
+Barra de navegación
+--------------------------*/
 
 .nav_bar {
-  text-align: center;
   width: 280px;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   position: absolute;
+  top: 0px;
   right: 0px;
   background: #415762;
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.85em;
 }
 
 .nav_bar ol {
@@ -110,26 +123,78 @@ li {
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
+  list-style: none;
 }
 
 .button_nav_bar {
   border: solid;
-  height: 100%;
-  width: 100%;
+  height: 0.2em;
+  width: 90%;
+  margin: 3.2em 0;
   display: flex;
   border: none;
-  border-bottom: solid 2px white;
-}
-
-.button_nav_bar:last-child {
-  border-bottom: none;
+  position: relative;
+  background: linear-gradient(to right, #89a6b3 75%, #ffffff);
 }
 
 .button_nav_bar a {
-  margin: auto;
-  font-size: 16px;
+  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  display: block;
+  transition: all ease-out 300ms;
+  margin-top: -40px;
+  letter-spacing: 0.2em;
+  opacity: 0.65;
+}
+
+.button_nav_bar a:hover{
+  color: #ffffff;
+  opacity: 1;
+}
+
+.sub_text {
+  font-family: "Roboto Slab", serif;
+  position: absolute;
+  margin-top: 30px;
+  opacity: 0.6;
+  font-size: 0.75em;
+}
+
+#buttom_360{
+  height: 15vh;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*-------------------------------------
+Información de interes en NAVBAR
+-----------------------------*/
+#info{
+  background: #89a6b3;
+  justify-content: flex-start;
+  height: 85vh;
+  width: 280px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#info > li{
+  padding: 1em;
+}
+
+.container_text_maps {
+  color: #ffffff;
+  list-style: none;
+  padding: 1em 1em 1em 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+}
+
+.container_text_maps li{
+  margin-bottom: 1em;
 }
 
 /* FIN Panel principal */
@@ -138,14 +203,6 @@ li {
 
 .container_info_dolmenes {
   height: 100vh;
-}
-
-.text_center {
-  text-align: center;
-}
-
-.sub_text {
-  font-family: "Roboto Slab", serif;
 }
 
 /* FIN historia de los dolmenes */
@@ -190,10 +247,7 @@ li {
   color: #ffffff;
 }
 
-.container_text_maps {
-  margin: 30px;
-  color: #ffffff;
-}
+
 /* FIN mapa de los dolmenes */
 
 /* INICIO de galeria de imágenes */
@@ -382,7 +436,7 @@ li {
 
   .container_info {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -412,12 +466,20 @@ li {
     background: linear-gradient(to top, #ffffff 80%, #ffffff00);
   }
 
+  .text_container div{
+    width: 100%;
+  }
+
+/*----------------------------------------
+Barra de navegación
+--------------------------*/
+
   .nav_bar {
     position: fixed;
+    top: auto;
     bottom: 0px;
-    height: 60px;
     width: 100%;
-    height: 140px;
+    height: 100px;
   }
 
   .nav_bar ol {
@@ -427,6 +489,10 @@ li {
   .button_nav_bar {
     border-bottom: none;
     border-right: solid 2px white;
+    height: 100%;
+    background: #415762;
+    padding: 1em;
+    min-width: 150px;
   }
 
   .button_nav_bar:last-child {
@@ -435,9 +501,24 @@ li {
 
   .button_nav_bar a {
     text-align: center;
-    padding: 5px;
     margin: auto;
   }
+
+  #buttom_360{
+    justify-content: center;
+    height: 100%;
+  }
+
+  /*-------------------------------------
+Información de interes en NAVBAR
+-----------------------------*/
+
+#info{
+  position: relative;
+  width: 100vh;
+  bottom: auto;
+  z-index: -1;
+}
 
   /* Fin panel pricipal */
 
@@ -449,10 +530,6 @@ li {
 
   .container_info_dolmenes {
     margin-bottom: 125px;
-  }
-
-  .nav_bar_dolmenes {
-    height: 125px;
   }
 
   .sub_text {

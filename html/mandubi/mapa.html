@@ -17,26 +17,30 @@
     <div class="flex_container">
         <section class="container_info">
             <div class="container_button">
-                <button class="lang fs-5 fw-bolder" onclick="history.back()">Atrás</button>
-                <button class="lang fs-5 fw-bolder">Idioma</button>
+                <button class="lang fw-bolder" onclick="history.back()">Atrás</button>
+                <button class="lang fw-bolder">Idioma</button>
             </div>
             <article class="maps_container ps-4 pe-4">
                 <img src="#" alt="imágen del mapa">
             </article>
         </section>
-        <nav class="nav_bar_maps">
-            <ol class="p-0 m-0 mb-2 border-bottom border-white border-3">
-                <li class="button_nav_bar text_center d-flex justify-content-center"><a class="fs-2 text-center" href="img360.html">Recorrido 360º</a></li>
+        <nav class="nav_bar">
+            <ol id="buttom_360" class="p-0 m-0">
+                <li class="button_nav_bar"><a href="img360.html">Recorrido 360º</a></li>
             </ol>
-            <h1 class="title fs-2">Información de interés</h1>
-            <ul class="container_text_maps">
-                <li class="fs-4">Formas de llegar</li>
-                <li class="fs-4">Rutas</li>
-                <li class="fs-4">Pueblos cercanos</li>
-                <li class="fs-4">Paradas de transporte público cercanas</li>
-                <li class="fs-4">Etc.</li>
-            </ul>
         </nav>
+        <ol id="info" class="p-0 m-0">
+            <li>
+                <h1 class="title text-center">Información de interés</h1>
+                <ul class="container_text_maps">
+                    <li>Formas de llegar</li>
+                    <li>Rutas</li>
+                    <li>Pueblos cercanos</li>
+                    <li>Paradas de transporte público cercanas</li>
+                    <li>Etc.</li>
+                </ul>
+            </li>
+        </ol>
     </div>
 </body>
 </html>
