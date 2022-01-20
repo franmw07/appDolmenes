@@ -20,15 +20,15 @@
   <body>
     <!-- Panel Galería de imágenes -->
     <div class="flex_container">
-      <section class="container_info container_info_maps">
+      <section class="container_info container_info_galery">
         <div class="container_button">
-          <button class="lang fs-5 fw-bolder" onclick="history.back()">
+          <button class="lang fw-bolder" onclick="history.back()">
             Atrás
           </button>
-          <button class="lang fs-5 fw-bolder">Idioma</button>
+          <button class="lang fw-bolder">Idioma</button>
         </div>
-        <article class="contenedor galeria ps-4 pe-4">
-          <div class="img-ampliada slider">
+        <article class="contenedor ps-4 pe-4">
+          <div class="img-ampliada">
             <img id="imgGalery" src="../../media/02_Jose_Arana.jpeg" alt="" />
           </div>
           <div class="carousel">
@@ -68,19 +68,17 @@
           </div>
       </article>
       </section>
-      <nav class="nav_bar_maps">
-        <h1
-          class="title fs-2 pb-3 m-0 mb-2 border-bottom border-white border-3 d-flex justify-content-center align-items-center"
-        >
-          Información de interés
-        </h1>
-        <ul class="container_text_maps">
-          <li class="fs-4">Nombre Jose Arana 02</li>
-          <li class="fs-4">Ubicación</li>
-          <li class="fs-4">Fecha</li>
-          <li class="fs-4">...</li>
-        </ul>
-      </nav>
+      <ol id="info" class="h-100 p-0 m-0">
+        <li>
+            <h1 class="title text-center">Información de interés</h1>
+            <ul class="container_text_maps">
+                <li>Nombre: <br><span class="color">Jose Arana 02</span></li>
+                <li>Ubicación: <br><span class="color">xxxxxx</span></li>
+                <li>Fecha: <br><span class="color">20/03/1720</span></li>
+                <li>...</li>
+            </ul>
+        </li>
+      </ol>
     </div>
     <script src="../../js/main.js"></script>
   </body>

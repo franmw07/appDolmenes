@@ -14,6 +14,7 @@ p,
 li {
   font-family: "Roboto Slab", serif;
 }
+
 /* INICIO estilos panel principal */
 
 .flex_container {
@@ -22,12 +23,23 @@ li {
   flex-wrap: wrap;
 }
 
+.container_button {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
 .lang {
   margin: 20px 5px 20px 25px;
   background: #415762;
   box-shadow: 0px 1px 1px 2px #89a6b3;
   border-radius: 5px;
-  width: 100px;
+  width: 100%;
+  min-width: 70px;
+  max-width: 100px;
   height: 40px;
   border: none;
   color: #ffffff;
@@ -35,29 +47,28 @@ li {
   letter-spacing: 0.1em;
 }
 
-.lang:hover{
+.lang:hover {
   box-shadow: none;
 }
 
 .container_info {
   width: calc(100% - 280px);
-  height: calc(100vh - 125px);
+  height: calc(100vh - 140px);
 }
 
-.img-fondo{
+.img-fondo {
   position: absolute;
   z-index: -1;
   width: calc(100% - 280px);
-  padding: 0px 25px;
 }
 
-.img-fondo img{
+.img-fondo img {
   width: 100%;
   height: 65vh;
   object-fit: cover;
 }
 
-.text_container{
+.text_container {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 186px);
@@ -65,10 +76,10 @@ li {
   align-items: center;
 }
 
-.text_container div{
+.text_container div {
   padding: 5px 20px;
   border-radius: 5px;
-  height: 35vh;
+  height: 40vh;
   width: 90%;
   background-color: #ffffff;
   box-shadow: 0px -14px 36px -11px #415762;
@@ -115,6 +126,8 @@ Barra de navegación
   text-align: left;
   font-weight: bold;
   font-size: 0.85em;
+  z-index: 1;
+  box-shadow: 0px 4px 10px -2px #415762;
 }
 
 .nav_bar ol {
@@ -124,6 +137,10 @@ Barra de navegación
   align-items: center;
   height: 100%;
   list-style: none;
+}
+
+#nav_bar_small {
+  height: auto;
 }
 
 .button_nav_bar {
@@ -148,7 +165,7 @@ Barra de navegación
   opacity: 0.65;
 }
 
-.button_nav_bar a:hover{
+.button_nav_bar a:hover {
   color: #ffffff;
   opacity: 1;
 }
@@ -161,7 +178,7 @@ Barra de navegación
   font-size: 0.75em;
 }
 
-#buttom_360{
+#buttom_360 {
   height: 15vh;
   align-items: center;
   justify-content: flex-end;
@@ -170,7 +187,8 @@ Barra de navegación
 /*-------------------------------------
 Información de interes en NAVBAR
 -----------------------------*/
-#info{
+
+#info {
   background: #89a6b3;
   justify-content: flex-start;
   height: 85vh;
@@ -180,8 +198,10 @@ Información de interes en NAVBAR
   right: 0px;
 }
 
-#info > li{
+#info > li {
   padding: 1em;
+  list-style: none;
+  font-size: 1em;
 }
 
 .container_text_maps {
@@ -193,65 +213,107 @@ Información de interes en NAVBAR
   letter-spacing: 0.2em;
 }
 
-.container_text_maps li{
+.container_text_maps li {
   margin-bottom: 1em;
 }
 
-/* FIN Panel principal */
+.color {
+  color: #415762;
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
-/* Estilos Historia de los dólmenes INICIO */
+/*-------------------------------------
+Historia dólmenes
+-----------------------------*/
 
 .container_info_dolmenes {
   height: 100vh;
 }
 
-/* FIN historia de los dolmenes */
-
-/* INICIO dolmenes de mandubi */
-.img_float {
-  float: right;
-  min-width: 200px;
-  min-height: 150px;
-  margin: 7px 20px;
-  background-color: rgb(0, 195, 255);
+.contariner_cards_scroll {
+  height: 80vh;
+  margin-top: 100px;
 }
-/* FIN dolmenes de mandubi */
 
-/* INICIO Panel mapa de los dólmenes */
+/*-------------------------------------
+Mapas dólmenes
+-----------------------------*/
+
 .maps_container {
   height: 70vh;
-  margin: 150px 30px 15px 15px;
-  border-radius: 8px;
-  background-color: rgb(0, 195, 255);
-  text-align: center;
+  margin: 100px 20px 15px;
 }
 
-.nav_bar_maps {
-  width: 280px;
+.maps_container iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------
+Galería img 360º
+-----------------------------*/
+
+.container_cards {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  background-color: #415762;
+  width: 100%;
 }
 
-.nav_bar_maps ol, .nav_bar_maps h1{
-  height: 100px;
+.card {
+  margin: auto;
+  min-width: 300px !important;
+  max-width: 380px;
 }
 
-.nav_bar_maps h1 {
+.card:hover {
+  box-shadow: 0px 4px 14px 1px #89a6b3;
+}
+
+.card-img-top {
+  height: 70%;
+}
+
+.card-body {
   text-align: center;
-  margin: 20px;
+  background: #415762;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
 }
 
+/*-------------------------------------
+Dolmen Mandubi
+-----------------------------*/
 
-/* FIN mapa de los dolmenes */
+.img_float {
+  float: right;
+  min-width: 200px;
+  max-width: 380px;
+  margin: auto 20px;
+  object-fit: cover;
+}
 
-/* INICIO de galeria de imágenes */
-/* contenedor de imágen seleccionada */
+/*-------------------------------------
+IMG 360º
+-----------------------------*/
+
+.container_img_360 {
+  width: 100%;
+  height: 100vh;
+}
+
+#activar-vista-360 {
+  display: none;
+}
+
+/*-------------------------------------
+Galeria de imagenes
+-----------------------------*/
+.container_info_galery {
+  height: 100vh;
+}
+
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -259,11 +321,9 @@ Información de interes en NAVBAR
 }
 
 .img-ampliada {
-  width: 80%;
+  width: 100%;
   height: 50vh;
   margin: 1em auto;
-  border-radius: 1em;
-  text-align: center;
 }
 
 .img-ampliada img,
@@ -273,16 +333,12 @@ Información de interes en NAVBAR
   object-fit: cover;
 }
 
-.slider img.active,
+.img-ampliada img.active,
 .img-carousel img.active,
-.slider model-viewer.active,
+.img-ampliada model-viewer.active,
 .img-carousel model-viewer.active {
   animation: fadeImg 0.8s;
 }
-
-/* fin del contenedor de imágen selecionada */
-
-/*----- Slider inferior -------*/
 
 .carousel {
   width: 100%;
@@ -336,6 +392,14 @@ Información de interes en NAVBAR
   filter: brightness(1);
 }
 
+.img-carousel img,
+.img-carousel model-viewer {
+  height: 107%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0.7em;
+}
+
 .image-container {
   width: 8em;
   height: 8em;
@@ -361,74 +425,25 @@ Información de interes en NAVBAR
   left: calc(-10% - 3px);
 }
 
-.img-carousel img,
-.img-carousel model-viewer {
-  height: 107%;
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 0.7em;
-}
+/*-------------------------------------
+Galeria de imagenes 3D
+-----------------------------*/
 
-/*------- Fin slider de imágenes -----*/
-
-/* INICIO galeria de imagenes cartas */
-.container-fluid {
-  max-width: 90%;
-}
-
-.container_cards {
-  height: 100vh;
-  width: 100%;
-}
-
-.contariner_cards_scroll {
-  height: 80%;
-  margin-top: 90px;
-}
-
-.card {
-  background-color: none;
-  margin: auto;
-}
-
-.card:hover {
-  box-shadow: 0px 4px 14px 1px #89a6b3;
-}
-
-.card-img-top {
-  height: 70%;
-  background-color: rgb(0, 195, 255);
-}
-
-.card-body {
-  text-align: center;
-  background: #415762;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-}
-
-.card_wh {
-  width: 23rem;
-  height: 23rem;
-}
-
-/* FIN galeria de imágenes cartas */
-
-/* INICIO panel imágen 360º */
-.container_button {
+#buttonVr {
   z-index: 1;
   position: absolute;
+  width: calc(100% - 280px);
+  padding-right: 20px;
 }
 
-.container_img_360 {
-  width: 100%;
-  height: 100vh;
+.container-button-vr {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 350px;
 }
 
-#activar-vista-360 {
-  display: none;
+#buttonVr:last-child {
+  justify-content: end;
 }
 
 @media only screen and (max-width: 600px) {
@@ -436,19 +451,23 @@ Información de interes en NAVBAR
 
   .container_info {
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Revisar si no modificar en index */
     display: flex;
     flex-direction: column;
+  }
+
+  .height{
+    height: 90vh;
   }
 
   .conteiner_logo {
     width: 100%;
     margin-bottom: 160px;
   }
-  
-  .img-fondo{
+
+  .img-fondo {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     object-fit: cover;
     top: 0;
     position: absolute;
@@ -456,21 +475,21 @@ Información de interes en NAVBAR
     padding: 0px;
   }
 
-  .img-fondo img{
+  .img-fondo img {
     height: 100%;
   }
 
   .text_container {
     height: 100%;
-    margin-top: 355px;
+    margin-top: 545px;
     background: linear-gradient(to top, #ffffff 80%, #ffffff00);
   }
 
-  .text_container div{
+  .text_container div {
     width: 100%;
   }
 
-/*----------------------------------------
+  /*----------------------------------------
 Barra de navegación
 --------------------------*/
 
@@ -480,10 +499,16 @@ Barra de navegación
     bottom: 0px;
     width: 100%;
     height: 100px;
+    box-shadow: 0px -4px 10px -2px #415762;
+    font-size: 0.7em;
   }
 
   .nav_bar ol {
     flex-direction: row;
+  }
+
+  #nav_bar_small {
+    height: 100px;
   }
 
   .button_nav_bar {
@@ -492,7 +517,7 @@ Barra de navegación
     height: 100%;
     background: #415762;
     padding: 1em;
-    min-width: 150px;
+    min-width: 100px;
   }
 
   .button_nav_bar:last-child {
@@ -504,7 +529,7 @@ Barra de navegación
     margin: auto;
   }
 
-  #buttom_360{
+  #buttom_360 {
     justify-content: center;
     height: 100%;
   }
@@ -513,40 +538,49 @@ Barra de navegación
 Información de interes en NAVBAR
 -----------------------------*/
 
-#info{
-  position: relative;
-  width: 100vh;
-  bottom: auto;
-  z-index: -1;
-}
-
-  /* Fin panel pricipal */
-
-  /* INICIO historia de los dolmenes */
-  .maps_container {
-    margin: 150px auto 25px;
-    width: 100%;
+  #info {
+    position: relative;
+    width: 100vh;
+    bottom: auto;
+    z-index: -1;
   }
 
+  /*-------------------------------------
+Historia dólmenes
+-----------------------------*/
+
   .container_info_dolmenes {
-    margin-bottom: 125px;
+    margin-bottom: 70px;
   }
 
   .sub_text {
     display: none;
   }
 
-  /* FIN historia de los dolmenes */
+  /*-------------------------------------
+Mapas dólmenes
+-----------------------------*/
 
-  /* INICIO Panel mapa de los dólmenes */
-
-  .nav_bar_maps {
+  .maps_container {
+    margin: 110px 0px 40px;
     width: 100%;
-    position: relative;
-    margin-top: 25px;
   }
 
-  /* Inicio galería */
+  /*-------------------------------------
+Dolmen Mandubi
+-----------------------------*/
+
+  .img_float {
+    margin: auto;
+    max-width: 100%;
+  }
+
+  /*-------------------------------------
+Galeria de imagenes
+-----------------------------*/
+  .container_info_galery {
+    height: 95vh;
+  }
 
   .img-ampliada {
     width: 100%;
@@ -557,10 +591,20 @@ Información de interes en NAVBAR
     --img-carousel-max-height: 200px;
   }
 
-  /* galeria Vr boton */
-  .container_button {
-    display: flex;
-    flex-wrap: nowrap;
+  /*-------------------------------------
+Galeria de imagenes 3D
+-----------------------------*/
+
+  #buttonVr {
+    width: 100%;
+    padding: 0px;
   }
 
+  .container-button-vr{
+    width: 300px;
+  }
+
+  #buttonVr .container-button-vr .lang {
+    margin: 20px auto 0px;
+  }
 }
