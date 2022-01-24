@@ -19,8 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <!-- Mapbox style -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
   </head>
-  <body>
+  <body onload="cargarMapa()">
     <!-- Panel mapa de los dólmenes -->
     <div class="flex_container">
       <section class="container_info height">
@@ -29,12 +31,7 @@
           <button class="lang fw-bolder">Idioma</button>
         </div>
         <article class="maps_container ps-4 pe-4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46635.327524976885!2d-2.2762851982018377!3d43.06860914737168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50322579961d03%3A0xddf2af30ea88ad7c!2s20709%20Ezquioga-Ichaso%2C%20Gipuzkoa!5e0!3m2!1ses!2ses!4v1642686903523!5m2!1ses!2ses"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+          <div id="map"></div>
         </article>
       </section>
       <ol id="info" class="h-100 p-0 m-0">
@@ -54,5 +51,8 @@
         </li>
       </ol>
     </div>
+    <!-- Api Mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <script src="../../js/main.js"></script>
   </body>
 </html>

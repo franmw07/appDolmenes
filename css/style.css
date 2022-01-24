@@ -250,6 +250,44 @@ Mapas dólmenes
   height: 100%;
 }
 
+#map{
+  width: 100%;
+  height: 100%;
+}
+
+.bi {
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: fixed;
+}
+.mapboxgl-ctrl{
+  display: none !important;
+}
+
+#popup{
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+}
+
+.mapboxgl-popup-content {
+  max-width: 400px;
+  font-size: 1.2em;
+  max-height: 400px;
+  letter-spacing: 0.1em;
+  }
+
+  .mapboxgl-popup-content p{
+    margin: 10px 0px 0px;
+  }
+
+  .mapboxgl-popup-close-button{
+    font-size: 1.5em;
+    margin: 0px 5px;
+  }
+
 /*-------------------------------------
 Galería img 360º
 -----------------------------*/
@@ -540,7 +578,7 @@ Información de interes en NAVBAR
 
   #info {
     position: relative;
-    width: 100vh;
+    width: 100vw;
     bottom: auto;
     z-index: -1;
   }
