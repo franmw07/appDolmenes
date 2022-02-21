@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,68 +11,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- javaScript main-->
+    <script src="../../js/main.js"></script>
 </head>
 <body onload="cargarCarousel()">
     <!-- Panel Galería de imágenes -->
-    <div class="flex_container">
-        <section class="container_info container_info_galery">
-            <div class="container_button">
+    <div class="flex-container">
+        <section class="container-info data-dolmen">
+            <div class="container-button">
                 <button class="lang fw-bolder" onclick="history.back()">Atrás</button>
                 <button class="lang fw-bolder">Idioma</button>
             </div>
-            <article class="contenedor ps-4 pe-4">
+            <article class="galery-container">
                 <div class="img-ampliada">
-                  <img id="imgGalery" src="../../media/02_Jose_Arana.jpeg" alt="" />
+                  <img id="imgGalery" src="../../media/gettyimages-927938320-2048x2048.jpg" alt="" />
                 </div>
                 <div class="carousel">
                   <div class="container-carousel-img">
-                    <div class="img-carousel">
-                      <img
-                        class="imgItems"
-                        src="../../media/02_Jose_Arana.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="img-carousel">
-                      <img
-                        class="imgItems"
-                        src="../../media/15_Jose_Arana.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="img-carousel">
-                      <img class="imgItems" src="../../media/dolmen-2.jpg" alt="" />
-                    </div>
-                    <div class="img-carousel">
-                      <img
-                        class="imgItems"
-                        src="../../media/Laskorain_HH3_1Solairua_EsperientziaTxokoa1_11.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="img-carousel">
-                      <img
-                        class="imgItems"
-                        src="../../media/Laskorain_HH4_1Solairua_Zentzumen_Txokoa1_29.jpeg"
-                        alt=""
-                      />
-                    </div>
+                    <img class="img-carousel" data-pos="-2" src="../../media/gettyimages-126383899-2048x2048.jpg" alt="1">
+                      <img class="img-carousel" data-pos="-1" src="../../media/gettyimages-657832689-2048x2048.jpg" alt="2">
+                      <img class="img-carousel" data-pos="0" src="../../media/gettyimages-927938320-2048x2048.jpg" alt="3">
+                      <img class="img-carousel" data-pos="1" src="../../media/gettyimages-845885088-2048x2048.jpg" alt="4">
+                      <img class="img-carousel" data-pos="2" src="../../media/gettyimages-1248257041-2048x2048.jpg" alt="5">
                   </div>
                 </div>
             </article>
+            <article class="galery-info-container">
+                <ol id="info">
+                    <li>
+                      <h1 class="title fs-1">Información de interés</h1>
+                      <ul class="container-text-maps">
+                        <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
+                            Dolmen 1</p></li>
+                          <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
+                            lorem impsum lorem impsum lorem impsum</p></li>
+                          <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
+                            lorem impsum lorem impsum lorem impsum</p></li>
+                          <li><img src="" alt=""><p><u>Etc.</u></p></li>
+                      </ul>
+                    </li>
+                </ol>
+            </article>
         </section>
-        <ol id="info" class="h-100 p-0 m-0">
-          <li>
-              <h1 class="title text-center">Información de interés</h1>
-              <ul class="container_text_maps">
-                  <li>Nombre: <br><span class="color">Jose Arana 02</span></li>
-                  <li>Ubicación: <br><span class="color">xxxxxx</span></li>
-                  <li>Fecha: <br><span class="color">20/03/1720</span></li>
-                  <li>...</li>
-              </ul>
-          </li>
-        </ol>
     </div>
-    <script src="../../js/main.js"></script>
 </body>
 </html>
