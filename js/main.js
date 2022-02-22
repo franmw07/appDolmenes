@@ -406,7 +406,7 @@ cargarCarousel = () => {
                 case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Irekia.glb":
                   document.querySelector(
                     ".container-text-maps"
-                  ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
+                  ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
                                     Dolmen 1</p></li>
                                   <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
                                     lorem impsum lorem impsum lorem impsum</p></li>
@@ -418,49 +418,37 @@ cargarCarousel = () => {
                 case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Animatua.glb":
                   document.querySelector(
                     ".container-text-maps"
-                  ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
+                  ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
                                     Dolmen 2</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>
-                                  <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                                    lorem impsum lorem impsum lorem impsum</p></li>
-                                  <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
                   document.querySelector("#hidden").style.display = "initial";
                   break;
                 case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb":
                   document.querySelector(
                     ".container-text-maps"
-                  ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                                    Dolmen 3</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>
-                                  <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                                    lorem impsum lorem impsum lorem impsum</p></li>
-                                  <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+                  ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
                   document.querySelector("#hidden").style.display = "none";
                   break;
                 case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita.glb":
                   document.querySelector(
                     ".container-text-maps"
-                  ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                                    Dolmen 4</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>
-                                  <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                                    lorem impsum lorem impsum lorem impsum</p></li>
-                                  <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+                  ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
                   document.querySelector("#hidden").style.display = "none";
                   break;
                 case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua_Animatua.glb":
                   document.querySelector(
                     ".container-text-maps"
-                  ).innerHTML =` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                                    Dolmen 5</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>
-                                  <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                                    lorem impsum lorem impsum lorem impsum</p></li>
-                                  <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+                  ).innerHTML =` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
                   document.querySelector("#hidden").style.display = "initial";
                   break;
   
@@ -606,57 +594,42 @@ cargarCarousel = () => {
           case "../../media/gettyimages-927938320-2048x2048.jpg":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 1</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
             break;
           case "../../media/gettyimages-126383899-2048x2048.jpg":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 2</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
             break;
           case "../../media/gettyimages-657832689-2048x2048.jpg":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 3</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
             break;
           case "../../media/gettyimages-845885088-2048x2048.jpg":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 4</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
             break;
           case "../../media/gettyimages-1248257041-2048x2048.jpg":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML =` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 5</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML =` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
             break;
 
           default:
@@ -670,61 +643,46 @@ cargarCarousel = () => {
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Irekia.glb":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 1</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Trikuharria irekita</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    Trikuharria irekita hildako batekin</p></li>`;
             document.querySelector("#hidden").style.display = "none";
             break;
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Animatua.glb":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 2</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
             document.querySelector("#hidden").style.display = "initial";
             break;
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 3</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Trikuharria hondatuta</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    Trikuharria denboraren eraginez suntsiturik</p></li>`;
             document.querySelector("#hidden").style.display = "none";
             break;
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita.glb":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 4</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Trikuharria itxita</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    Trikuharria itxita goiko harriarekin estalita.</p></li>`;
             document.querySelector("#hidden").style.display = "none";
             break;
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua_Animatua.glb":
             document.querySelector(
               ".container-text-maps"
-            ).innerHTML =` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Nombre:</u><br>
-                              Dolmen 5</p></li>
-                            <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Ubicación:</u><br>
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Paradas de transporte público:</u><br> 
-                              lorem impsum lorem impsum lorem impsum</p></li>
-                            <li><img src="" alt=""><p><u>Etc.</u></p></li>`;
+            ).innerHTML =` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
             document.querySelector("#hidden").style.display = "initial";
             break;
 
