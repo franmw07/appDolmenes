@@ -437,7 +437,8 @@ Galeria de imagenes
 }
 
 .img-ampliada img,
-.img-ampliada model-viewer {
+.img-ampliada model-viewer,
+.img-ampliada iframe {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -447,27 +448,51 @@ Galeria de imagenes
 .img-ampliada img.active,
 img.img-carousel .active,
 .img-ampliada model-viewer.active,
-model-viewer.img-carousel .active {
+model-viewer.img-carousel .active,
+.img-ampliada iframe.active,
+iframe.img-carousel .active {
   animation: fadeImg 0.8s;
 }
 
 /* carousel */
-
+  
 .carousel{
   width: 100%;
   height: 30vh;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .container-carousel-img{
-  width: 100%;
+  width: 300%;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
-  overflow-x: hidden;
-  z-index: 5;
+}
+
+.container-carousel-img.vr{
+  width: 100%;
+}
+
+.button-carousel{
+    height: 100%;
+    width: 60px;
+    border: none;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    background-image: linear-gradient( rgb(255, 255, 255,0), rgba(255, 255, 255, 1), rgb(255, 255, 255,0));
+}
+
+.button-carousel:last-child{
+    right: 0px;
+}
+
+.button-carousel>img:hover{
+  transition: transform 0.5s;
+  transform: scale(1.2)
 }
 
 .carousel.smooth-return {
@@ -476,49 +501,31 @@ z-index: -5;
 }
 
 .img-carousel{
-width: calc(100% / 5);
 max-width: 400px;
-min-width: 300px;
-height: 100%;
-max-height: 220px;
-min-height: 150px;
+min-width: calc(300% / 17);
+height: 80%;
+max-height: 150px;
+min-height: 100px;
 box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-position: absolute;
 filter: brightness(0.9);
 transition: inherit;
-border-radius: 0.7em;
-background-color: #ffffff;
+margin: auto 5px;
+border-radius: 14px;
+}
+
+.img-carousel.vr{
+  min-width: 150px;
+}
+
+.img-carousel>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
 }
 
 .img-carousel.highlight {
 filter: brightness(1);
 }
-
-.img-carousel[data-pos="0"] {
-  transform: translateX(0%) scale(1);
-z-index: 0;
-}
-
-.img-carousel[data-pos="-1"] {
-transform: translateX(-60%) scale(.8);
-z-index: -1;
-}
-
-.img-carousel[data-pos="1"] {
-transform: translateX(60%) scale(.8);
-z-index: -1;
-}
-
-.img-carousel[data-pos="-2"] {
-transform: translateX(-115%) scale(.5);
-z-index: -2;
-}
-
-.img-carousel[data-pos="2"] {
-transform: translateX(115%) scale(.5);
-z-index: -2;
-}
-
 /* Fin de carousel */ 
 
 /*-------------------------------------
@@ -528,6 +535,22 @@ Galeria de imagenes 3D boton
 #hidden{
   display: none;
   margin-left: auto;
+}
+
+.sketchfab{
+  display: none;
+}
+
+.hiddenVr{
+  display: none;
+}
+
+.seeVr{
+  display: initial;
+}
+
+.summary{
+  display: none;
 }
 
 @media only screen and (max-width: 820px) {

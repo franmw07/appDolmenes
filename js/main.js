@@ -402,6 +402,7 @@ cargarCarousel = () => {
             } else {
               let newSrc = src.getAttribute("src");
               innerImg.setAttribute("src", newSrc);
+              console.log(newSrc)
               switch (newSrc) {
                 case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Irekia.glb":
                   document.querySelector(
@@ -422,7 +423,7 @@ cargarCarousel = () => {
                                     Dolmen 2</p></li>
                                   <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
                                     lorem impsum lorem impsum lorem impsum</p></li>`;
-                  document.querySelector("#hidden").style.display = "initial";
+                  document.querySelector("#hidden").style.display = "block";
                   break;
                 case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb":
                   document.querySelector(
@@ -449,7 +450,7 @@ cargarCarousel = () => {
                                     Dolmen 2</p></li>
                                   <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
                                     lorem impsum lorem impsum lorem impsum</p></li>`;
-                  document.querySelector("#hidden").style.display = "initial";
+                  document.querySelector("#hidden").style.display = "block";
                   break;
   
                 default:
@@ -591,56 +592,8 @@ cargarCarousel = () => {
         let newSrc = newActive.getAttribute("src");
         innerImg.setAttribute("src", newSrc);
         switch (newSrc) {
-          case "../../media/gettyimages-927938320-2048x2048.jpg":
-            document.querySelector(
-              ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
-                                    Dolmen 2</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>`;
-            break;
-          case "../../media/gettyimages-126383899-2048x2048.jpg":
-            document.querySelector(
-              ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
-                                    Dolmen 2</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>`;
-            break;
-          case "../../media/gettyimages-657832689-2048x2048.jpg":
-            document.querySelector(
-              ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
-                                    Dolmen 2</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>`;
-            break;
-          case "../../media/gettyimages-845885088-2048x2048.jpg":
-            document.querySelector(
-              ".container-text-maps"
-            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
-                                    Dolmen 2</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>`;
-            break;
-          case "../../media/gettyimages-1248257041-2048x2048.jpg":
-            document.querySelector(
-              ".container-text-maps"
-            ).innerHTML =` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
-                                    Dolmen 2</p></li>
-                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
-                                    lorem impsum lorem impsum lorem impsum</p></li>`;
-            break;
-
-          default:
-            console.log("error");
-            break;
-        }
-      } else {
-        let newSrc = newActive.getAttribute("src");
-        innerImg.setAttribute("src", newSrc);
-        switch (newSrc) {
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Irekia.glb":
+            
             document.querySelector(
               ".container-text-maps"
             ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
@@ -650,15 +603,17 @@ cargarCarousel = () => {
             document.querySelector("#hidden").style.display = "none";
             break;
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Animatua.glb":
+            
             document.querySelector(
               ".container-text-maps"
             ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
                                     Dolmen 2</p></li>
                                   <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
                                     lorem impsum lorem impsum lorem impsum</p></li>`;
-            document.querySelector("#hidden").style.display = "initial";
+            document.querySelector("#hidden").style.display = "";
             break;
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb":
+            
             document.querySelector(
               ".container-text-maps"
             ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
@@ -668,6 +623,7 @@ cargarCarousel = () => {
             document.querySelector("#hidden").style.display = "none";
             break;
           case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita.glb":
+            
             document.querySelector(
               ".container-text-maps"
             ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
@@ -683,7 +639,77 @@ cargarCarousel = () => {
                                     Dolmen 2</p></li>
                                   <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
                                     lorem impsum lorem impsum lorem impsum</p></li>`;
-            document.querySelector("#hidden").style.display = "initial";
+            document.querySelector("#hidden").style.display = "";
+            break;
+          case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita - copia.glb":
+            let hiddenModelViewer = document.querySelector('#imgGalery');
+            hiddenModelViewer.className = "hiddenVr";
+            let sketchfab = document.querySelector('.sketchfab');
+            sketchfab.className = "seeVr";
+            break;
+
+          default:
+            console.log("error");
+            break;
+        }
+      } else {
+        let newSrc = newActive.getAttribute("src");
+        innerImg.setAttribute("src", newSrc);
+        switch (newSrc) {
+          case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Irekia.glb":
+            
+            document.querySelector(
+              ".container-text-maps"
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Trikuharria irekita</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    Trikuharria irekita hildako batekin</p></li>`;
+            document.querySelector("#hidden").style.display = "none";
+            break;
+          case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Animatua.glb":
+            
+            document.querySelector(
+              ".container-text-maps"
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
+            document.querySelector("#hidden").style.display = "";
+            break;
+          case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb":
+            
+            document.querySelector(
+              ".container-text-maps"
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Trikuharria hondatuta</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    Trikuharria denboraren eraginez suntsiturik</p></li>`;
+            document.querySelector("#hidden").style.display = "none";
+            break;
+          case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita.glb":
+            
+            document.querySelector(
+              ".container-text-maps"
+            ).innerHTML = ` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Trikuharria itxita</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    Trikuharria itxita goiko harriarekin estalita.</p></li>`;
+            document.querySelector("#hidden").style.display = "none";
+            break;
+          case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua_Animatua.glb":
+            document.querySelector(
+              ".container-text-maps"
+            ).innerHTML =` <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
+                                    Dolmen 2</p></li>
+                                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
+                                    lorem impsum lorem impsum lorem impsum</p></li>`;
+            document.querySelector("#hidden").style.display = "";
+            break;
+          case "../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita - copia.glb":
+            let hiddenModelViewer = document.querySelector('#imgGalery');
+            hiddenModelViewer.className = "hiddenVr";
+            let sketchfab = document.querySelector('.sketchfab');
+            sketchfab.className = "seeVr";
             break;
 
           default:
@@ -736,10 +762,17 @@ returnMaps = () =>{
 
 /* galeria de imágenes */
 
-/*imgGalery = () =>{
-  const img = document.querySelector('.overflow-auto.container-cards-scroll');
-  img.addEventListener('click', imgSrc =>{
-    let aSky = document.querySelector('#scene360').getAttribute('src');
-    console.log(aSky);
-  })
-}*/
+const moveImg = () => {
+  /* declaración de las variables */
+const containerCarousel = document.querySelector('.container-carousel-img');
+const buttonCarousel = document.querySelectorAll('.button-carousel');
+const items = document.querySelectorAll('.img-carousel');
+
+buttonCarousel.forEach((items, i) => {
+    buttonCarousel[i].addEventListener('click',()=>{
+            let position = i;
+            let operation = position * -100;
+            containerCarousel.style.transform = `translateX(${ operation }%)`;
+    })
+});
+}
