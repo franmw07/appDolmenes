@@ -55,14 +55,21 @@ li {
 }
 
 .img-fondo {
-  width: calc(90vw);
+  width: calc(100vw - 150px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.img-fondo div{
+  position: absolute;
+  margin-top: 70px;
 }
 
 .img-fondo img {
     width: 100%;
-    height: 98vh;
-    margin-top: 16px;
-    margin-left: 31px;
+    height: 100vh;
 }
 
 .text-container {
@@ -282,7 +289,7 @@ Mapas dólmenes
   padding-right: 3em;
 }
 
-#map{
+#map, .map, .map img{
   width: 100%;
   height: 100%;
   border-radius: 14px;
@@ -334,7 +341,6 @@ Información de interes
   }
 
   .container-text-maps li {
-    margin-bottom: 1em;
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -442,7 +448,6 @@ Galeria de imagenes
 .img-ampliada iframe {
   height: 100%;
   width: 100%;
-  object-fit: cover;
   border-radius: 14px;
 }
 
@@ -455,79 +460,80 @@ iframe.img-carousel .active {
   animation: fadeImg 0.8s;
 }
 
-/* carousel */
-  
-.carousel{
+/* carousel final */
+
+#wrapper {
   width: 100%;
   height: 30vh;
-  display: flex;
-  align-items: center;
-  overflow-x: hidden;
+  max-width: 964px;
+  position: relative;
 }
 
-.container-carousel-img{
-  width: 300%;
+#carousel {
   height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
   display: flex;
-  justify-content: flex-start;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
   align-items: center;
 }
 
-.container-carousel-img.vr{
-  width: 100%;
-}
-
-.button-carousel{
-    height: 100%;
-    width: 60px;
-    border: none;
-    position: absolute;
-    z-index: 1;
-    background-color: transparent;
-    background-image: linear-gradient( rgb(255, 255, 255,0), rgba(255, 255, 255, 1), rgb(255, 255, 255,0));
-}
-
-.button-carousel:last-child{
-    right: 0px;
-}
-
-.button-carousel>img:hover{
-  transition: transform 0.5s;
-  transform: scale(1.2)
-}
-
-.carousel.smooth-return {
-transition: all 0.6s ease;
-z-index: -5;
-}
-
-.img-carousel{
-max-width: 400px;
-min-width: calc(300% / 17);
-height: 80%;
-max-height: 150px;
-min-height: 100px;
-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-filter: brightness(0.9);
-transition: inherit;
-margin: auto 5px;
-border-radius: 14px;
-}
-
-.img-carousel.vr{
-  min-width: 150px;
-}
-
-.img-carousel>img{
-  width: 100%;
-  height: 100%;
+.item {
+  width: 180px;
+  height: 180px;
+  box-shadow: 0px 2px 8px 0px rgb(50 50 50 / 50%);
+  filter: brightness(0.9);
+  transition: inherit;
   border-radius: 14px;
 }
 
-.img-carousel.highlight {
-filter: brightness(1);
+#next>img, #prev>img {
+  height: 30px;
+  width: 30px;
 }
-/* Fin de carousel */ 
+
+#next>img:hover, #prev>img:hover{
+  transition: transform 0.5s;
+  transform: scale(1.2)
+}
 
 /*-------------------------------------
 Galeria de imagenes 3D boton
@@ -538,7 +544,7 @@ Galeria de imagenes 3D boton
   margin-left: auto;
 }
 
-.sketchfab{
+#sketchfab{
   display: none;
 }
 
@@ -550,8 +556,8 @@ Galeria de imagenes 3D boton
   display: initial;
 }
 
-.summary{
-  display: none;
+.viewer .titlebar{
+  display: none !important;
 }
 
 @media only screen and (max-width: 820px) {
@@ -584,6 +590,10 @@ Galeria de imagenes 3D boton
     margin-top: 80px;
     border-radius: 14px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .img-fondo div{
+    margin-top: 20px;
   }
 
   .img-fondo img{
@@ -627,7 +637,7 @@ Barra de navegación
     border-bottom: none;
     border-right: solid 2px #89A6B3;
     height: 60px;
-    min-width: 100px;
+    min-width: 80px;
     margin: auto;
     height: 80%;
   }
@@ -643,7 +653,7 @@ Barra de navegación
   }
 
   .button-nav-bar a img{
-    height: 35px;
+    height: 3vh;
   }
 
   #buttom-360 {
@@ -725,10 +735,14 @@ Galeria de imagenes
   padding: 0px;
 }
 
-.carousel{
-  width: 95vw;
-  height: 20vh;
-  margin-top: 1em;
+#wrapper{
+  height: 16vh;
+  margin-top: 15px;
+}
+
+#content>img, #content>model-viewer{
+  height: 130px;
+  width: 130px;
 }
 
 }

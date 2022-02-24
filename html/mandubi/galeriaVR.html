@@ -26,6 +26,8 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    <!-- libreria A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   </head>
   <body onload="cargarCarousel()">
     <!-- Panel Galería de imágenes -->
@@ -51,11 +53,12 @@
               class="Model3d"
               bounds="tight"
               src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb"
-              animation-name="Running"
+              alt="dolmen 1"
+              data-description="recreacion del dolmen 1"
               ar-modes="webxr scene-viewer quick-look"
               camera-controls
+              autoplay
               environment-image="neutral"
-              poster=""
               shadow-intensity="1"
             >
               <div class="progress-bar hide" slot="progress-bar">
@@ -72,63 +75,72 @@
               </div>
             </model-viewer>
             <iframe 
-              class="sketchfab"
+              id="sketchfab"
               title="MandubikoTrikuharri" 
               frameborder="0" 
               allowfullscreen mozallowfullscreen="true" 
               webkitallowfullscreen="true" 
               allow="autoplay; fullscreen; xr-spatial-tracking" 
-              xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/f403450519b947aba3fcbe35aa0d70b4/embed"> 
+              xr-spatial-tracking 
+              execution-while-out-of-viewport 
+              execution-while-not-rendered web-share 
+              src="https://sketchfab.com/models/f403450519b947aba3fcbe35aa0d70b4/embed"> 
             </iframe>
           </div>
           <!-- Selector de imágenes -->
-          <div class="carousel">
-            <div class="container-carousel-img vr">
-                <model-viewer
-                class="img-carousel vr" data-pos="-2"
-                  bounds="tight"
-                  src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Irekia.glb"
-                  ar
-                  poster=""
-                  shadow-intensity="1"
-                ></model-viewer>
-                <model-viewer
-                class="img-carousel vr" data-pos="-1"
-                  bounds="tight"
-                  src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita.glb"
-                  ar
-                  poster=""
-                  shadow-intensity="1"
-                ></model-viewer>
-                <model-viewer
-                class="img-carousel vr" data-pos="0"
-                  bounds="tight"
-                  src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb"
-                  ar
-                  poster=""
-                  shadow-intensity="1"
-                ></model-viewer>
-                <model-viewer
-                class="img-carousel vr" data-pos="1"
-                  bounds="tight"
-                  src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita.glb"
-                  ar
-                  poster=""
-                  shadow-intensity="1"
-                ></model-viewer>
-                <model-viewer
-                class="img-carousel vr" data-pos="2"
-                  bounds="tight"
-                  src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Irekia.glb"
-                  ar
-                  poster=""
-                  shadow-intensity="1"
-                ></model-viewer>
-                <model-viewer
-                  class="img-carousel vr" data-pos="2"
-                  src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita - copia.glb"> 
-                </model-viewer>
+          <div id="wrapper">
+            <div id="carousel">
+                <div id="content">
+                  <model-viewer
+                    class="item"
+                    bounds="tight"
+                    src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Irekia.glb"
+                    alt="Mandubi Zelaiko Trikuharria 1"
+                    data-description="Mandubi Zelaiko Trikuharriaren 3D 1"
+                  ></model-viewer>
+                  <model-viewer
+                    class="item"
+                    bounds="tight"
+                    src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita.glb"
+                    alt="Mandubi Zelaiko Trikuharria 2"
+                    data-description="Mandubi Zelaiko Trikuharriaren 3D 2"
+                  ></model-viewer>
+                  <model-viewer
+                    class="item"
+                    bounds="tight"
+                    src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb"
+                    alt="Mandubi Zelaiko Trikuharria 3"
+                    data-description="Mandubi Zelaiko Trikuharriaren 3D 3"
+                  ></model-viewer>
+                  <model-viewer
+                    class="item"
+                    bounds="tight"
+                    src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita.glb"
+                    alt="Mandubi Zelaiko Trikuharria 4"
+                    data-description="Mandubi Zelaiko Trikuharriaren 3D 4"
+                  ></model-viewer>
+                  <model-viewer
+                    class="item"
+                    bounds="tight"
+                    src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Itxita - copia.glb"
+                    alt="Mandubi Zelaiko Trikuharria 5"
+                    data-description="Mandubi Zelaiko Trikuharriaren 3D 5"
+                  ></model-viewer>
+                  <model-viewer
+                    class="item"
+                    src="https://sketchfab.com/models/f403450519b947aba3fcbe35aa0d70b4/embed"
+                    poster="../../media/3D_Trikuharri/GLB/animation.png"
+                    alt="Mandubi Zelaiko Trikuharria 6"
+                    data-description="Mandubi Zelaiko Trikuharriaren 3D 6"
+                  ></model-viewer>
+                </div>
             </div>
+            <button id="prev">
+              <img src="../../media/arrowLeftBlue.svg" alt="icono antes">
+            </button>
+            <button id="next">
+                <img src="../../media/arrowRightBlue.svg" alt="icono siguiente">
+            </button>
           </div>
         </article>
         <article class="galery-info-container">
@@ -136,16 +148,16 @@
               <li>
                 <h1 class="title fs-1">Informazioa</h1>
                 <ul class="container-text-maps">
-                  <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br>
-                    Mandubi Zelaiko Trikuharria</p></li>
-                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br>
-                    Mandubi Zelaiko Trikuharriaren 3D</p></li>
+                  <li><img src="../../media/dolmenBlue.svg" alt="icono dolmen"><p><u>Izena:</u><br></p>
+                  </li><p id="textTitle">Mandubi Zelaiko Trikuharria</p>
+                  <li><img src="../../media/mapBlue.svg" alt="icono mapa"><p><u>Deskribapena:</u><br></p>
+                  </li><p id="textDes">Mandubi Zelaiko Trikuharriaren 3D</p>
                 </ul>
               </li>
           </ol>
 
           <button class="button-info" onclick="innerSee360()">
-                    <div><img src="../../media/360White.svg" alt="icon como llegar"></div>
+                    <div><img src="../../media/360White.svg" alt="icon RA"></div>
                     <div><p>RA</p></div>
           </button>
       </article>
