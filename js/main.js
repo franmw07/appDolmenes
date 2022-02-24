@@ -131,7 +131,6 @@ returnMaps = () =>{
   cargarCarousel();
 
   let noneHTML = document.querySelector('.container-img-360');
-  selectSection.removeChild(noneHTML);
   document.querySelector('.container-info.data-dolmen').style.display = 'flex';
   cargarMapa();
 }
@@ -208,9 +207,9 @@ const textInner = () =>{
 }
 
 //boton animación
-
+/*
 const seeButton = () =>{
   document.querySelector('#hidden').style.display = 'block';
-}
+}*/
 
 }
