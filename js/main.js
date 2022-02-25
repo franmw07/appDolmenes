@@ -11,37 +11,37 @@ cargarMapa = () => {
       {
         type: "item",
         properties: {
-          nombre: "Dolmen 1",
-          descripcion: "Esta es la descripción del dolmen 1",
+          nombre: "Mandubizelaia Trikuharria",
+          descripcion: "Duela 5.300 urtetik 3.700 bitarte",
           tamaño: [100, 100],
         },
         geometry: {
           type: "point",
-          coordinates: [-2.4, 43.12],
+          coordinates: [-2.2492332837193274,43.08537680774247],
         },
       },
       {
         type: "item",
         properties: {
-          nombre: "Dolmen 2",
-          descripcion: "Esta es la descripción del dolmen 2",
+          nombre: "Trikuaizti I",
+          descripcion: "Duela 5.800 urtetik 3.500 bitarte",
           tamaño: [100, 100],
         },
         geometry: {
           type: "point",
-          coordinates: [-2.3, 43.095],
+          coordinates: [-2.2401604529942163,43.08862681032788],
         },
       },
       {
         type: "item",
         properties: {
-          nombre: "Dolmen 3",
-          descripcion: "Esta es la descripción del dolmen 3",
+          nombre: "Trikuaizti II",
+          descripcion: "Duela 6.000 urtetik 5.800 bitarte",
           tamaño: [100, 100],
         },
         geometry: {
           type: "point",
-          coordinates: [-2.2706537, 43.0831025],
+          coordinates: [-2.2401847738782252,43.08824399812255],
         },
       },
     ],
@@ -50,8 +50,8 @@ cargarMapa = () => {
   const map = new mapboxgl.Map({
     container: "map", // container ID
     style: "mapbox://styles/mapbox/streets-v11", // style URL
-    center: [-2.2706537, 43.0831025], // starting position [lng, lat]
-    zoom: 10, // starting zoom
+    center: [-2.2492332837193274,43.0850], // starting position [lng, lat]
+    zoom: 15, // starting zoom
   });
   // agregamos las marcas al mapa
   for (const marker of iconJson.items) {
