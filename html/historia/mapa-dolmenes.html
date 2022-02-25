@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mandubi Trikuharria</title>
+    <title>Mandubizelaia Trikuharria</title>
     <link rel="stylesheet" href="../../css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -21,6 +21,7 @@
     />
     <!-- Mapbox style -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../media/dolmenBlue.svg">
   </head>
   <body onload="cargarMapa()">
     <!-- Panel mapa de los dólmenes -->
@@ -33,23 +34,27 @@
         <article class="maps-container">
           <div id="map"></div>
         </article>
-        <article class="maps-info-container">
-          <ol id="info">
-            <li>
-              <h1 class="title fs-1">Informazioa</h1>
-              <ul class="container-text-maps">
-                <li><img src="../../media/townBlue.svg" alt="icono pueblos"><p><u>Gertuko herriak:</u><br>
-                  Ezkio, Ormaiztegi, Beasain, Gabiria, Arriaran, Matxinbenta, Zumarraga, Urretxu</p></li>
-                <li><img src="../../media/busBlue.svg" alt="icono transporte"><p><u>Aparkalekua:</u><br> 
-                  Mandubizelaira iristeko aparkalekua.</p></li>
-              </ul>
-            </li>
-          </ol>
-            <button class="button-info" onclick=" window.open('https://goo.gl/maps/9xtdw3nFYw3jEKTt6','_blank')">
+
+            <article class="maps-info-container">
+                <ol id="info">
+                  <li>
+                    <h1 class="title fs-1">Informazioa</h1>
+                    <ul class="container-text-maps">
+                      <li><img src="../../media/townBlue.svg" alt="icono pueblos"><p><u>Gertuko herriak:</u><br>
+                         Itsaso, Ezkio, Ormaiztegi, Beasain, Gabiria, Arriaran, Matxinbenta, Zumarraga, Urretxu</p></li>
+                      <button class="button-info" onclick=" window.open('https://goo.gl/maps/MStcKPMKZuhxoo5v7','_blank')">
                     <div><img src="../../media/roadWhite.svg" alt="icon como llegar"></div>
-                    <div><p>Nola iritsi</p></div>
-            </button>
-        </article>
+                    <div><p>Aparkalekua</p></div>
+                </button>  
+                    </ul>
+                  </li>
+                </ol>
+                <button class="button-info" onclick=" window.open('https://goo.gl/maps/bqdba14S4fdR5iZR6','_blank')">
+                    <div><img src="../../media/roadWhite.svg" alt="icon como llegar"></div>
+                    <div><p>Mandubizelaia</p></div>
+                </button>
+            </article>
+
       </section>
     </div>
     <!-- Api Mapbox -->
