@@ -110,7 +110,7 @@ innerSee360 = () =>{
     const selectSection = document.querySelector('.flex-container');
     let innerHTML360 = `<section class="container-img-360">
                           <div class="container-button">
-                              <button class="lang fw-bolder" onclick="returnMaps()">Atrás</button>
+                              <button class="lang fw-bolder" onclick="returnMaps()">Atzera</button>
                           </div>
                           <a-scene>
                               <a-sky   
@@ -126,13 +126,10 @@ innerSee360 = () =>{
 // volver al mapa 
 
 returnMaps = () =>{
-  document.querySelector('.container-img-360').style.display = 'none';
+  let removeHtml = document.querySelector('.container-img-360');
+  document.querySelector('.flex-container').removeChild(removeHtml);
   document.querySelector('.container-info.data-dolmen').style.display = 'flex';
   cargarCarousel();
-
-  let noneHTML = document.querySelector('.container-img-360');
-  document.querySelector('.container-info.data-dolmen').style.display = 'flex';
-  cargarMapa();
 }
 
 // selector de imagenes

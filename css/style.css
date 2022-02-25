@@ -447,6 +447,7 @@ Galeria de imagenes
 .img-ampliada img {
   height: 100%;
   border-radius: 14px;
+  max-width: calc(100% - 20px);
 }
 
 .img-ampliada model-viewer,
@@ -454,6 +455,7 @@ Galeria de imagenes
   height: 100%;
   width: 100%;
   border-radius: 14px;
+  display: none;
 }
 
 .img-ampliada img.active,
@@ -549,7 +551,7 @@ Galeria de imagenes 3D boton
 }
 
 #sketchfab{
-  display: none;
+  display: block;
 }
 
 .hiddenVr{
@@ -737,6 +739,11 @@ Galeria de imagenes
   width: 95vw;
   height: 50vh;
   padding: 0px;
+}
+
+.img-ampliada img {
+  width: 100%;
+  object-fit: contain;
 }
 
 #wrapper{
