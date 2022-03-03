@@ -626,7 +626,7 @@ Barra de navegación
 
   .nav-bar {
     position: fixed;
-    top: calc(100vh - 100px);
+    top: calc(100vh - 140px);
     right: inherit;
     width: 95vw;
     height: 80px;
