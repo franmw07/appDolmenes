@@ -20,30 +20,6 @@ cargarMapa = () => {
           coordinates: [-2.2492332837193274,43.08537680774247],
         },
       },
-      {
-        type: "item",
-        properties: {
-          nombre: "Trikuaizti I",
-          descripcion: "Duela 5.800 urtetik 3.500 bitarte",
-          tamaño: [100, 100],
-        },
-        geometry: {
-          type: "point",
-          coordinates: [-2.2401604529942163,43.08862681032788],
-        },
-      },
-      {
-        type: "item",
-        properties: {
-          nombre: "Trikuaizti II",
-          descripcion: "Duela 6.000 urtetik 5.800 bitarte",
-          tamaño: [100, 100],
-        },
-        geometry: {
-          type: "point",
-          coordinates: [-2.2401847738782252,43.08824399812255],
-        },
-      },
     ],
   };
   // Creamos el mapa
