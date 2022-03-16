@@ -581,16 +581,16 @@ Galeria de imagenes 3D boton
   /* panel principal */
 
   .flex-container{
-    justify-content: center;
+    /*justify-content: center;*/
   }
 
-  .container-info {
+  /*.container-info {
     width: 100vw;
     height: 78vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  }*/
 
   .container-logo {
     width: 100vw;
@@ -778,11 +778,37 @@ estilo boton 360º mobile
   }
 }
 
-
-
-
 .Model3d{
   width: 400px;
   height: 250px;
 }
+
+.ar-button {
+    background-image: url(https://modelviewer.dev/assets/ic_view_in_ar_new_googblue_48dp.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 12px 50%;
+    background-color: #fff;
+    margin-top: 50px;
+    white-space: nowrap;
+    bottom: 132px;
+    padding: 0px 16px 0px 40px;
+    font-family: Roboto Regular, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    color:#4285f4;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    border: 1px solid #DADCE0;
+  }
+
+#ar-button:active {
+    background-color: #E8EAED;
+  }
+
+#ar-button:focus {
+    outline: none;
+  }
+
+
 

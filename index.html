@@ -41,10 +41,9 @@
                 <li class="button-nav-bar"><a href="html/3D/explicacion.html"><img src="media/investigationWhite.svg" alt="icono Investigación"> <p>3D esperientzia</p></a></li>
             </ol>
         </nav>
-    </div>
 
-    <!-- Contenedor 3D -->
-        <div id="contenedor3D" class="contenedor3D">
+            <!-- Contenedor 3D -->
+    <div id="contenedor3D" class="contenedor3D">
                 <model-viewer
                     id="imgGalery"
                     class="Model3d"
@@ -59,15 +58,18 @@
                     environment-image="neutral"
                     shadow-intensity="1">
 
-                    <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; left: 5px; height: 30px;">
-                         👁️‍🗨️Ikusi zure mugikorrean 👁️‍🗨️ 
+                    <button class="buttonAR" slot="ar-button">
+                         Ikusi zure mugikorrean 
                     </button>
 
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
                 </model-viewer>
-        </div>
+    </div>
+    </div>
+
+
 
 </body>
 </html>
