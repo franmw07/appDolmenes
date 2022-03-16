@@ -16,6 +16,17 @@ li {
   text-align: justify;
 }
 
+/*--------------------------------------------
+Posicionar boton ikusi zure mugikorrean
+-----------------------------------------*/
+.contenedor3D{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 /* INICIO estilos panel principal */
 
 .flex-container {
@@ -286,7 +297,7 @@ Mapas dólmenes
   position: absolute;
   right: 0;
   top: 0;
-  padding-right: 3em;
+  padding-right: 6em;
 }
 
 #map, .map, .map img{
@@ -766,3 +777,12 @@ estilo boton 360º mobile
     float: left;
   }
 }
+
+
+
+
+.Model3d{
+  width: 400px;
+  height: 250px;
+}
+

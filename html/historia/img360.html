@@ -1,101 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandubizelaia Trikuharria</title>
-    <link rel="stylesheet" href="../../css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- fuentes de google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../../media/dolmenBlue.svg">
-    <script src="../../js/main.js"></script>
-    <!-- libreria A-FRAME -->
+    <!-- libreria A-Frame -->
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <!-- libreria Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  </head>
-  <body>
-    <!-- INICIO Galería de imagenes 360º -->
-    <div id="ocultar-galeria" class="flex-container">
-      <section class="container-cards">
-        <div class="container-button">
-          <button class="lang fw-bolder" onclick="history.back()">
-            Atzera
-          </button>
-          <!--<button class="lang fw-bolder">Idioma</button>-->
-        </div>
-        <!-- contenedor de imagnes con información -->
-        <div class="overflow-auto container-cards-scroll">
-            <div class="row-container">
-              <div class="col-container">
-                <div class="col-container-img">
-                  <div class="col-container-360"><p>360º</p></div>
-                  <img class="change" src="../../media/gettyimages-1267579597-2048x2048.jpg" alt="dolmen xxxxx">
-                </div>
-                <div class="col-container-text">
-                  <h3>Mandubi Zelaia</h3>
-                  <p fs-5>360º irudiak - Mandubi zelaia</p>
-                </div>
-              </div>
-              <div class="col-container">
-                <div class="col-container-img">
-                  <div class="col-container-360"><p>360º</p></div>
-                  <img class="change" src="../../media/gettyimages-685766224-2048x2048.jpg" alt="dolmen xxxxx">
-                </div>
-                <div class="col-container-text">
-                  <h3>Trikuaizti I</h3>
-                  <p fs-5>360º irudiak - Trikuaizti I</p>
-                </div>
-              </div>
-              <div class="col-container">
-                <div class="col-container-img">
-                  <div class="col-container-360"><p>360º</p></div>
-                  <img class="change" src="../../media/gettyimages-1248257041-2048x2048.jpg" alt="dolmen xxxxx">
-                </div>
-                <div class="col-container-text">
-                  <h3>Trikuaizti II</h3>
-                  <p fs-5>360º irudiak - Trikuaizti II</p>
-                </div>
-              </div>
-        </div>
-      </section>
-    </div>
+</head>
+<body>
     <!-- INICIO Panel de imágenes 360º -->
-    <div id="activar-vista-360">
-      <section
-        class="container-img-360"
-      >
-        <div class="container-button">
-          <button class="lang fw-bolder" onclick="returnGaleria()">
-            Atrás
-          </button>
-        </div>
-        <a-scene>
-          <a-sky id="scene360" rotation="0 -100 0" radius="50"></a-sky>
-        </a-scene>
-      </section>
+    <div class="flex-container">
+        <section class="container-img-360">
+            <div class="container-button">
+                <button class="lang fw-bolder" onclick="history.back()">Atzera</button>
+            </div>
+            <a-scene vr-mode-ui="enabled: false">
+                <a-sky   
+                src = "../../media/Panorama360.jpg"
+                rotation="0 -130 0"></a-sky >
+            </a-scene >
+        </section>
     </div>
-    <!-- Script Jquery para cambiar la vista de la imágen seleccionada a 360º-->
-    <script>
-      $(document).ready(function changeImg() {
-        $(".change").click(function imgSrc() {
-          $("#scene360").attr("src", this.src);
-          $("#ocultar-galeria").css("display", "none");
-          $("#activar-vista-360").css("display", "block");
-        });
-      });
-    </script>
-  </body>
+</body>
 </html>
