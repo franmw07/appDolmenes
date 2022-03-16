@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandubizelaia Trikuharria</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../../media/dolmenBlue.svg">
+    <!-- javaScript main-->
+    <script src="../../js/main.js"></script>
+    <!-- libreria  para model viewer -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <!-- libreria A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body onload="cargarCarousel()">
+    <!-- Panel Galería de imágenes -->
+    <div class="flex-container">
+      <section
+        class="container-info data-dolmen"
+      >
+        <!-- botones -->
+        <div class="container-button">
+          <button class="lang fw-bolder" onclick="history.back()">Atzera</button>
+          <!--<button class="lang fw-bolder">Idioma</button>-->
+          <button id="hidden" class="lang fw-bolder pause" value="pause" onclick="pauseAndPlay()">
+              Play
+            </button>
+      </div>
+        
+        <!-- contenedor de imagen central -->
+        <article class="galery-container">
+          <!--contenedor de modelo 3D-->
+          <div class="img-ampliada">
+            <model-viewer
+              id="imgGalery"
+              class="Model3d"
+              bounds="tight"
+              src="../../media/3D_Trikuharri/GLB/GLB_Trikuharri_Hondatua.glb"
+              alt="dolmen 1"
+              data-description="recreacion del dolmen 1"
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              autoplay
+              environment-image="neutral"
+              shadow-intensity="1"
+            >
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+                View in your space
+              </button>
+              <div id="ar-prompt" style="display: none">
+                <!-- cambiar si se desea ver la mano con movil en la imagen -->
+                <img
+                  src="https://modelviewer.dev/shared-assets/icons/hand.png"
+                />
+              </div>
+            </model-viewer>
+            <iframe 
+              id="sketchfab"
+              title="MandubikoTrikuharri" 
+              frameborder="0" 
+              allowfullscreen mozallowfullscreen="true" 
+              webkitallowfullscreen="true" 
+              allow="autoplay; fullscreen; xr-spatial-tracking" 
+              xr-spatial-tracking 
+              execution-while-out-of-viewport 
+              execution-while-not-rendered web-share 
+              src="https://sketchfab.com/models/d5de55da994748928522b9dba2812cd1/embed"> 
+            </iframe>
+          </div>
+
+          <!-- Selector de imágenes -->
+          <div id="wrapper">
+            <div id="carousel">
+                <div id="content">
+
+                  <h4 id="info3DVideo">Mandubizelaia Trikuharriaren eraikuntzaren prozesua</h4>
+
+                  <!-- SKETCHFAB 
+                  <model-viewer
+                    id="modelErainkuntza"
+                    class="item"
+                    src="https://sketchfab.com/models/d5de55da994748928522b9dba2812cd1/embed"
+                    poster="../../media/3D_Trikuharri/GLB/animation.png"
+                    alt="Mandubizelaia Trikuharria - Eraikuntza"
+                    data-description="Mandubizelaia Trikuharria - Eraikuntza"
+                  ></model-viewer>
+
+
+                  <model-viewer
+                    id="modelHildakoa"
+                    class="item"
+                    src="https://sketchfab.com/models/5d3907d9d590473ba0f05a38e64ac9e1/embed"
+                    poster="../../media/3D_Trikuharri/GLB/animation.png"
+                    alt="Mandubizelaia Trikuharria - Hildakoa"
+                    data-description="Mandubizelaia Trikuharria - Hildakoa"
+                  ></model-viewer>
+
+
+                   HONDATUTA 
+                  <model-viewer
+                    id="modelHondatuta"
+                    class="item"
+                    src="https://sketchfab.com/models/a21939da15ca4966b92884928419629f/embed"
+                    poster=""
+                    alt="Mandubi Zelaiko Trikuharria - Hondatuta"
+                    data-description="Mandubi Zelaiko Trikuharria - Hondatuta"
+                  ></model-viewer>-->
+                </div>
+            </div>
+
+            <!--<button id="prev">
+              <img src="../../media/arrowLeftBlue.svg" alt="icono antes">
+            </button>
+            <button id="next">
+                <img src="../../media/arrowRightBlue.svg" alt="icono siguiente">
+            </button>-->
+          </div>
+        </article>
+        <article class="galery-info-container">
+          <ol id="info">
+              <li>
+                <h1 class="title fs-1">Mandubizelaia Trikuharria: <br> Animazioak</h1>
+              </li>
+
+              <li>
+                <button class="button-info lang fw-bolder" onclick="cambiarAnimacion('Eraikuntza')">
+                    <div><p>Eraikuntza</p></div>
+                </button>
+              </li>
+
+              <li>
+                <button class="button-info lang fw-bolder" onclick="cambiarAnimacion('Hildakoa')">
+                    <div><p>Hildakoa</p></div>
+                </button>
+              </li>
+
+              <li>
+                <button class="button-info lang fw-bolder" onclick="cambiarAnimacion('Hondatuta')">
+                    <div><p>Hondatuta</p></div>
+                </button>
+              </li>
+
+          </ol>
+
+      </article>
+      </section>
+    </div>
+    <script>
+      function cambiarAnimacion(anim)
+      {
+        //console.log("Cambiando animación: "+anim);
+        if(anim=="Eraikuntza")
+        {
+          var model = document.getElementById('sketchfab');
+          model.setAttribute('src','https://sketchfab.com/models/d5de55da994748928522b9dba2812cd1/embed');
+
+          var info = document.getElementById('info3DVideo');
+          info.innerText="Mandubizelaia Trikuharriaren eraikuntzaren prozesua";
+
+          console.log("Cambiando animación en pantalla principal: "+anim);
+
+        }
+        
+        if(anim=="Hildakoa")
+        {
+          var model = document.getElementById('sketchfab');
+          model.setAttribute('src','https://sketchfab.com/models/5d3907d9d590473ba0f05a38e64ac9e1/embed');
+
+          var info = document.getElementById('info3DVideo');
+          info.innerText="Mandubizelaia Trikuharrian hildakoa barneratzearen prozesua";
+          
+          console.log("Cambiando animación en pantalla principal: "+anim);
+        }
+
+        if(anim=="Hondatuta")
+        {
+          var model = document.getElementById('sketchfab');
+          model.setAttribute('src','https://sketchfab.com/models/a21939da15ca4966b92884928419629f/embed');
+
+          var info = document.getElementById('info3DVideo');
+          info.innerText="Mandubizelaia Trikuharriaren hondaketa denboraren eraginez";
+
+          console.log("Cambiando animación en pantalla principal: "+anim);
+        }
+      }
+    </script>
+  </body>
+</html>
