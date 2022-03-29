@@ -39,9 +39,14 @@ Posicionar boton ikusi zure mugikorrean
   z-index: 1;
   position: absolute;
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   width: calc(100vw - 310px);
+}
+
+.container-button-2 {
+position: absolute;
+right:    0;
+bottom:   0;
 }
 
 .lang {

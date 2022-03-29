@@ -22,12 +22,28 @@
             <div class="container-button">
                 <button class="lang fw-bolder" onclick="history.back()">Atzera</button>
             </div>
-            <a-scene>
+
+            <a-scene vr-mode-ui="enabled: false">
                 <a-sky   
                 src = "../../media/Mandubi360.jpg"
                 rotation="0 60 0"></a-sky >
             </a-scene >
+
         </section>
+
+        <div class="container-button-2">
+                <button class="lang fw-bolder" onclick="entrandoVR()">VR</button>
+        </div>
+
     </div>
+
+    <script>
+        function entrandoVR()
+        {
+            var scene = document.querySelector('a-scene');
+            scene.enterVR();
+            console.log("Entrando en VR mode");
+        }
+    </script>
 </body>
 </html>
